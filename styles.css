@@ -2090,7 +2090,7 @@ background-color: #191e23;
     padding: 1rem 3rem;
     color: white;
     background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 5 8px 8px rgba(0, 0, 0, 0.1);
     font-family: Bricolage Grotesque;
 }
 
@@ -2205,6 +2205,7 @@ background-color: #191e23;
 
   .login-card .create{
     background-color: transparent;
+    border: 1px solid #007bff;
     
   }
 
@@ -2223,7 +2224,7 @@ background-color: #191e23;
 
   @media (max-width: 900px){
     .section{
-        padding: 5rem 1.0rem;
+        padding: 5rem 0.5rem;
     }
 
     .login-card{
@@ -2268,6 +2269,7 @@ background-color: #191e23;
     font-size: 0.8em;
     margin-top: 5px;
     display: flex;
+    font-size: 8px;
 }
 
 .strength-bar {
@@ -2350,7 +2352,7 @@ background-color: #191e23;
 .section1b{
     width: 100%;
     height: 100vh;
-    background-color: #191e23;
+    background-color: #ffffff;
     padding: 25px 0.5rem;
     color: white;
     display: flex;
@@ -2552,49 +2554,7 @@ background-color: #191e23;
 
     /******** REPAYMENT PAGE **************/
 
-    .repaymentbox {
-        width: 100%;
-        background: #232b32;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 12px;
-        margin-top: 12px;
-        justify-content: center;
-      }
-
-      .repaymentbox p {
-        font-size: 10px;
-      }
-
-      .repaymentbox h2{
-        font-size: 20px;
-      }
-
-      
-.repay-section{
-    padding: 10px 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.repay-cont{
-    width: 100%;
-    background: #232b32;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 40px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    padding: 10px;
-  }
-  .repay-cont p {
-    font-size: 10px;
+   t-size: 10px;
   }
 
   .divider3{
@@ -2646,4 +2606,59 @@ background-color: #191e23;
     background-color: #007bff;
     color: #fff;
   }
+
+
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ 50% opacity */
+    padding-top: 60px; /* Location of the box */
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border-radius: 14px;
+    color: black;
+    width: 90%;
+    height: 90%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: Bricolage Grotesque;
+}
+
+.modal-content p{
+    text-align: center;
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-top: 14px;
+}
+
+.new-cont{
+    height: 40%;
+    width: 90%;
+    background-color: red;
+    display: flex;
+    direction: column;
+}
+
+.modal-content img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+  
   
