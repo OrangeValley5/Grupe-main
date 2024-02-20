@@ -2305,6 +2305,21 @@ background-color: #191e23;
 }
 
 
+.notification {
+    display: none;
+    color: #656565; /* Red */
+    margin-top: 5px;
+    font-size: 12px;
+    background-color: #f6f6f6;
+    padding: 14px 14px;
+    border-radius: 8px;
+}
+
+.password-requirements {
+    margin-top: 5px;
+}
+
+
   /******** APPLY FORM ********/
 
   .login-card2{
