@@ -2647,7 +2647,7 @@ background-color: #191e23;
 
 .new-cont{
     height: 40%;
-    width: 90%;
+    width: 100%;
     background-color: rgb(247, 247, 247);
     display: flex;
     direction: column;
