@@ -2768,7 +2768,7 @@ background-color: #191e23;
 }
 
 .cont-subtitle{
-    color: rgb(70, 70, 70);
+    color: rgb(110, 110, 110);
     font-family: Bricolage Grotesque;
     margin-left: 10px;
     margin-left: 10px;
@@ -2846,6 +2846,6 @@ background-color: #191e23;
     padding: 4px 8px;
 }
 
-.bold{
+#bold{
     font-weight: 700;
 }
