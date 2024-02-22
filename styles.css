@@ -2863,23 +2863,26 @@ background-color: #191e23;
     height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.5); /* Black w/ 50% opacity */
-    padding-top: 60px; /* Location of the box */
+    /* Location of the box */
     backdrop-filter: blur(5px);
 }
 
 .modal-content2 {
     background-color: #fefefe;
-    margin: 5% 10px; /* 5% from the top and centered */
+    margin: 2% 2%; /* 5% from the top and centered */
     padding: 20px;
     border-radius: 14px;
     color: black;
     width: 50%;
-    height: 100%; /* Could be more or less, depending on screen size */
+    height: 80%; /* Could be more or less, depending on screen size */
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     font-family: Bricolage Grotesque;
+    float: left;
+    margin-left: -10%; /* Start off-screen to the left */
+    transition: margin-left 1.0s; /* Slide animation duration */
 }
 
 .modal-content2 p{
@@ -2887,4 +2890,27 @@ background-color: #191e23;
     font-size: 14px;
     color: #8c8c8c;
     margin-top: 14px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal2.open {
+    display: block; /* Show the modal when open */
+}
+
+.modal2.open .modal-content2 {
+    margin-left: 0; /* Slide in from the left when open */
 }

@@ -54,18 +54,18 @@
 
             <div id="myModal2" class="modal2">
                 <div class="modal-content2">
-                    <h2>Welcome on board !</h2>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    
                     <p>This is a modal that pops up when you arrive on the dashboard page.</p>
         
                     <div class="cirx">
         
                     </div>
         
-                    <a class="flow"   href="sub.html">Make deposit</a>
                 </div>
             </div>
 
-            <h2>Make Payment</h2>
+            <h2 onclick="openModal()">Make Payment</h2>
             <div class="new-cont">
             
             <p class="cont-subtitle">You are to make a payment of $25 using
@@ -207,10 +207,7 @@
     // Get the modal
     var modal = document.getElementById("myModal2");
 
-    // Show the modal when the page loads
-    window.onload = function() {
-        modal.style.display = "block";
-    }
+    
 
     // Close the modal when the user clicks anywhere outside of it
     window.onclick = function(event) {
@@ -218,6 +215,28 @@
             modal.style.display = "none";
         }
     }
+
+
+    function closeModal() {
+            modal.style.display = "none";
+            document.body.classList.add("modal-closed"); // Add class to show page content
+        }
+
+
+        function openModal() {
+            modal.style.display = "block";
+            setTimeout(function() {
+                modal.classList.add("open");
+            }, 50); // Delay added to ensure the display property is applied before adding the 'open' class
+        }
+
+        function closeModal() {
+            modal.classList.remove("open");
+            setTimeout(function() {
+                modal.style.display = "none";
+            }, 500); // Delay added to match the transition duration
+        }
+        
 </script>
 
  
