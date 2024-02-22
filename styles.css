@@ -2776,3 +2776,32 @@ background-color: #191e23;
     font-weight: lighter;
     font-weight: 14pox;
 }
+
+.pay-box{
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+
+.copy-btn{
+    height: 100%;
+    width: 60px;
+    border: 1px solid #c8c8c8;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.copy-btn img{
+    width: 14px;
+    height: 14px;
+}
