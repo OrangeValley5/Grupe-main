@@ -19,7 +19,7 @@ body{
 }
 
 nav{
-    background-color: #000000;
+    background-color: #ffffff;
     color: white;
     display:  flex;
     justify-content: space-between;
@@ -1342,8 +1342,8 @@ footer span {
     .logo{
         font-size: 24px;
         font-weight: bold;
-        font-family: Bricolage Grotesque
-        ;
+        font-family: Bricolage Grotesque;
+        color: #000;
     }
 
     .active2{
@@ -1548,7 +1548,7 @@ width: 100%;
 .prev-container{
     background-color: #191e23;
     padding: 50px 8rem;
-    color: #fff;
+    color: #000;
 }
 
 .prev-container h1{
@@ -1556,7 +1556,7 @@ width: 100%;
 }
 
 .prev-container button{
-    font-family: 'poppins';
+    font-family: ;
     font-weight: medium;
 }
 
@@ -1613,7 +1613,7 @@ width: 100%;
     border-radius: 5px;
     color: white;
     font-weight: 500;
-    background-color: rgb(0, 228, 87);
+    background-color: #1787ff;
     transition: 0.3s ease-out;
 }
 
@@ -1694,12 +1694,13 @@ background-color: #191e23;
     align-self:last baseline;
     padding: 5px 5px;
     border-radius: 20px;
-    background-color: rgb(0, 211, 81);
+    background-color: #1787ff;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .tag p{
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 10px;
 }
 
@@ -1764,9 +1765,10 @@ background-color: #191e23;
         }
 
         .prev-container{
-            background-color: #191e23;
+            background-color: #fff;
             padding: 50px 1rem;
-            color: #fff;
+            color: #000;
+            font-family: Bricolage Grotesque;
         }
 
         .prev-container h1{
