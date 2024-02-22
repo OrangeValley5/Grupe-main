@@ -51,6 +51,20 @@
     <div>
         <div class="section1b" >
 
+
+            <div id="myModal2" class="modal2">
+                <div class="modal-content2">
+                    <h2>Welcome on board !</h2>
+                    <p>This is a modal that pops up when you arrive on the dashboard page.</p>
+        
+                    <div class="cirx">
+        
+                    </div>
+        
+                    <a class="flow"   href="sub.html">Make deposit</a>
+                </div>
+            </div>
+
             <h2>Make Payment</h2>
             <div class="new-cont">
             
@@ -191,7 +205,7 @@
 
 <script>
     // Get the modal
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("myModal2");
 
     // Show the modal when the page loads
     window.onload = function() {
@@ -201,7 +215,7 @@
     // Close the modal when the user clicks anywhere outside of it
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.style.display = "block";
+            modal.style.display = "none";
         }
     }
 </script>
