@@ -2781,7 +2781,7 @@ background-color: #191e23;
     height: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-left: 14px;
     background-color: #f3f3f3;
     border-radius: 8px;
@@ -2791,6 +2791,11 @@ background-color: #191e23;
     justify-content: space-between;
     align-items: center;
     color: #000;
+}
+
+.pay-box p{
+    font-size: 11px;
+    color: #7d7d7d;
 }
 
 .copy-btn{
@@ -2807,4 +2812,40 @@ background-color: #191e23;
 .copy-btn img{
     width: 20px;
     height: 20px;
+}
+
+.bt-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    padding: 14px 8px;
+    
+
+}
+
+.bt-container p{
+    color: black;
+    font-family: Bricolage Grotesque;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.pay-titles{
+    color: #000;
+}
+
+#choose-file{
+    background-color: hsl(211, 100%, 85%);
+    color: #007bff;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+.bold{
+    font-weight: 700;
 }
