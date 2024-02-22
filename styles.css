@@ -2557,62 +2557,14 @@ background-color: #191e23;
 
   /******** ELIGIBILITY **************/
 
-  .amountbox {
-    width: 100%;
-    height: 80px;
-    background: rgb(0, 228, 87);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
+ 
   .section1b h6 {
     font-weight: normal;
     margin-bottom: 8px;
     margin-top: 8px;
   }
 
-  .coverbtn {
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.1rem;
-    border-radius: 100px;
-    border: 3px solid white;
-  }
-
-  .amountcont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 14px;
-    margin-right: 14px;
-  }
-
-  .amountbox h2{
-    color: white;
-    font-size: 20px;
-  }
-
-  .amountcont img{
-    width: 20px;
-    height: 20px;
-  }
-
-
-
-  .smallcont p {
-    font-size: 10px;
-    
-  }
-
- 
   
-
-
   .details {
     width: 100%;
     display: flex;
@@ -2624,9 +2576,7 @@ background-color: #191e23;
 
     /******** REPAYMENT PAGE **************/
 
-   t-size: 10px;
-  }
-
+  
   .divider3{
     width: 100%;
     background: rgb(95, 95, 95);
@@ -2716,11 +2666,9 @@ background-color: #191e23;
 }
 
 .new-cont{
-    height: 40%;
     width: 100%;
-    background-color: rgb(247, 247, 247);
     display: flex;
-    direction: column;
+    flex-direction: column;
 }
 
 .modal-content img{
@@ -2736,6 +2684,77 @@ background-color: #191e23;
 }
 
 
+.amountbx{
+    
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #f4f4f4;
+    font-family: Bricolage Grotesque;
+    font-size: 20px;
+    outline-color: #007bff;
+}
 
+.new-cont{
+    padding: 10px 10px;
+}
+
+
+.new-cont h6{
+    color: black;
+    font-family: Bricolage Grotesque;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.pay-options{
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: Bricolage Grotesque;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.pay-options p{
+    color: black;
+    margin-left: 8px;
+}
+
+
+.pay-options img{
+    width: 15px;
+    height: 15px;
+}
   
-  
+.pay-btn{
+    font-family: Bricolage Grotesque;
+    background-color: #007bff;
+    text-align: center;
+    padding: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 14px;
+
+
+}
