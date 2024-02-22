@@ -29,7 +29,13 @@
 <body>
     <div class="section">
         
-        <h4>Grupe</h4>
+      <nav id="nav2">
+        <a href="index.html"><h4 id="logo">Grupe </h4></a>
+  
+        <ul>
+            <li><a href="login.html" class="active">Sign In</a></li>
+        </ul>
+    </nav>
         
         <div class="login-card"  data-aos="fade-up">
             <h5>Create your grupe <br> account</h5>
@@ -38,12 +44,12 @@
 
               <div class="input-container">
                 <i class="fa-solid fa-envelope icon" ></i>
-                <input id="email" type="text" class="input-field" placeholder="First Name">
+                <input id="firstName" type="text" class="input-field" placeholder="First Name">
               </div>
 
               <div class="input-container">
                 <i class="fa-solid fa-envelope icon" ></i>
-                <input id="email" type="text" class="input-field" placeholder="Last Name">
+                <input id="lastName" type="text" class="input-field" placeholder="Last Name">
               </div>
 
 
@@ -78,7 +84,7 @@
                 </div>
 
                   <a class="flow"  href="dasboard.html">Create Account</a>
-                  <button class="create" ><a href="login.html"> Sign In</a></button>
+                  <a class="flow3" href="login.html"> Sign In</a>
 
                   
                 
@@ -88,7 +94,7 @@
     </div>
     
     <script src="./Mail.js"></script>
-    <script src="script.js" defer></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

@@ -1551,8 +1551,10 @@ width: 100%;
     color: black;
     font-family: Bricolage Grotesque;
     font-size: 24px;
+    align-self: center;
 }
 #nav2{
+    width: 100%;
     background-color: #ffffff;
     color: white;
     display:  flex;
@@ -2131,7 +2133,6 @@ background-color: #191e23;
 .section h4{
     color: black;
     font-size: 18px;
-    margin-bottom: 20px;
     font-family: Bricolage Grotesque;
 }
 
@@ -2239,6 +2240,18 @@ background-color: #191e23;
     border-radius: 5px;
     padding: 15px 0;
   }
+
+  .flow3{
+    text-decoration: none;
+    color: #007bff;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    padding: 15px 0;
+    font-size: 12px;
+  }
   
   .forgot{
     display: flex;
@@ -2281,7 +2294,7 @@ background-color: #191e23;
 
   @media (max-width: 900px){
     .section{
-        padding: 5rem 0.5rem;
+        padding: 0rem 0.5rem;
     }
 
     .login-card{
