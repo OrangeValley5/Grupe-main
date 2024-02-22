@@ -2680,7 +2680,7 @@ background-color: #191e23;
     color: black;
     font-family: Bricolage Grotesque;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 
@@ -2698,6 +2698,15 @@ background-color: #191e23;
     font-family: Bricolage Grotesque;
     font-size: 20px;
     outline-color: #007bff;
+}
+
+.amountbx::before {
+    content: "$"; /* Add the dollar symbol */
+    position: absolute;
+    left: 5px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000; /* Adjust the color as needed */
 }
 
 .new-cont{
@@ -2756,5 +2765,14 @@ background-color: #191e23;
     margin-bottom: 50px;
     font-size: 14px;
 
+}
 
+.cont-subtitle{
+    color: rgb(70, 70, 70);
+    font-family: Bricolage Grotesque;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-weight: 14pox;
 }
