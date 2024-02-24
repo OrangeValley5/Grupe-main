@@ -2983,6 +2983,8 @@ background-color: #191e23;
 }
 
 
+/********** Third modal *************/
+
 .modal3 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -3029,7 +3031,6 @@ background-color: #191e23;
 
 
 /* Hide the scrollbar on the body when the modal is open */
-
 
 body.modal-open3 {
     overflow: hidden;
