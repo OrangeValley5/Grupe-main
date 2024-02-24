@@ -880,6 +880,8 @@
             setTimeout(function() {
                 modal.classList.add("open");
             }, 50); // Delay added to ensure the display property is applied before adding the 'open' class
+
+            document.body.classList.add('modal-open3');
         }
 
         function closeModal() {
@@ -887,12 +889,14 @@
             setTimeout(function() {
                 modal.style.display = "none";
             }, 500); // Delay added to match the transition duration
+            document.body.classList.remove('modal-open3'); 
         }
 
     // Close the modal when the user clicks anywhere outside of it
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            document.body.classList.remove('modal-open3'); 
         }
     }
 </script>
