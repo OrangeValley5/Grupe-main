@@ -3014,7 +3014,7 @@ background-color: #191e23;
 
 
 .modal-content3 li{
-    margin-top: 40px;
+    margin-top: 38px;
     text-align: center;
     list-style: none;
     
@@ -3023,6 +3023,7 @@ background-color: #191e23;
 .modal-content3 a{
     text-decoration: none;
     color: #000;
+    font-size: 20px;
     font-weight: 600;
 }
 
