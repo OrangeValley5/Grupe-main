@@ -60,10 +60,10 @@
         <div class="section1b" >
 
 
-            <div class="pay-options">
+            <div class="safe-img">
 
-                <img src="images/btc.png" alt="">
-                <p>Bitcoin</p>
+                <img src="images/safe.png" alt="">
+        
             </div>
            
 
@@ -77,17 +77,184 @@
 
             
 
+            <div class="safe-div">
+                <div class="follow">
+                    <img src="images/icons8-bank-64.png" alt="">
+                </div>
+                <div class="safe-div2">
+                    <h4>
+                         +2,0000
+                    </h4>
+
+                    <p>
+                        Users
+                       </p>
+
+                      
+                </div>
+                
+            </div>
+
+
+            <div class="safe-div">
+                <div class="follow">
+                    <img src="images/icons8-bank-64.png" alt="">
+                </div>
+                <div class="safe-div2">
+                    <h4>
+                         +1k
+                    </h4>
+
+                    <p>
+                        Trusted reviews
+                       </p>
+
+                      
+                </div>
+                
+            </div>
+
+
+            <div class="safe-div">
+                <div class="follow">
+                    <img src="images/icons8-bank-64.png" alt="">
+                </div>
+                <div class="safe-div2">
+                    <h4>
+                         Funds
+                    </h4>
+
+                    <p>
+                       All our funds are regularly validated
+                       </p>
+
+                      
+                </div>
+                
+            </div>
+
+
+            <h2 id="safe-subtitle">Security at Grupe</h2>
+
+
+            <div class="safe-trust">
+
+                <h3>
+                    Asset Protection
+                 </h3>
+
+                <p>
+                    We prioritize the security of your assets,
+                     implementing various measures to secure them 
+                     against potential threats. Crypto assets are stored 
+                     in highly secure cold storage facilities, subject to
+                      external audit. Your assets remain exclusively yours.
+                   </p>
+
+            </div>
+
+            <div class="safe-trust2">
+
+                <h3>
+                    Regulation, Registration, 
+                    licences
+                 </h3>
+
+                <p>
+                    The Bitpanda Group meticulously adheres to American laws 
+                    and regulations. Our operations are conducted in compliance
+                     with various EMI registrations, as well as licenses for NMITI ,
+                      E-Money, and VFD II across all our key markets.
+                   </p>
+
+            </div>
+
+
+            <div class="safe-trust">
+
+                <h3>
+                    User Data Protection
+                 </h3>
+
+                <p>
+                    Group exclusively processes your personal information for purposes 
+                    sanctioned by the CCPA. We abstain from utilizing personal data for automated 
+                    decision-making or profiling, and we have implemented several security measures 
+                    to ensure the secure storage and processing of your data.
+                   </p>
+
+            </div>
+
+
+            <div class="safe-trust2">
+
+                <h3>
+                    Financial Transparency
+                 </h3>
+
+                <p>
+                    As the leading crypto investment platform in America, 
+                    we also boast one of the most stringent regulatory frameworks. 
+                    Our commitment to doing things properly, rather than taking shortcuts,
+                     is evident in our complete transparency, acquisition of licenses that 
+                     subject us to oversight from multiple financial market authorities,
+                      and regular validation of our funds and business practices by external entities.
+                   </p>
+
+            </div>
+
+          
             
+
+            <h2 id="safe-subtitle">Top-notch Security</h2>
+            <div class="new-cont2">
             
+            <p class="cont2-subtitle">
+                
+                Having internally maintained security programs is one 
+                thing, but ensuring they meet industry standards and 
+                validating them with best-in-class certifications is
+                 another level of commitment. While the latter is more
+                  challenging and time-consuming, it's essential for being
+                  a secure and rigorously regulated compan
 
-           
+            </p>
 
-           
-
-           
+            </div>
 
 
-            <a class="pay-btn" href="checkout.html"> Submit Payment</a></button>
+            <h2 id="safe-subtitle">Secure and regulated</h2>
+            <div class="new-cont2">
+            
+            <p class="cont2-subtitle">
+                
+                We have attained the SOC 2 Type 1 report. This is a
+                 significant achievement that demonstrates our ongoing
+                  commitment to the highest security and compliance standards.
+
+            </p>
+
+
+            <img src="images/lrqa.png" alt="">
+
+            </div>
+
+
+
+
+            <h2 id="safe-subtitle">Keeping your account secure</h2>
+            <div class="new-cont2">
+            
+            <p class="cont2-subtitle">
+                
+                We have attained the SOC 2 Type 1 report. This is a
+                 significant achievement that demonstrates our ongoing
+                  commitment to the highest security and compliance standards.
+
+            </p>
+
+
+            
 
             </div>
 
@@ -104,72 +271,6 @@
   <script>
     AOS.init();
   </script>
-
-
-
-
-
-<script>
-    // Function to retrieve and display data from local storage
-    function retrieveDataFromLocalStorage() {
-        const savedBankName = localStorage.getItem('selectedBank');
-        const savedAccountNumber = localStorage.getItem('accountNumber');
-        const savedAmount = localStorage.getItem('savedAmount1');
-        const savedDate = localStorage.getItem('savedDate');
-        const savedDuration = localStorage.getItem('dury');
-        const savedLastName = localStorage.getItem('lastName');
-        const savedfirstName = localStorage.getItem('user_name');
-
-
-
-        const bankNameElement = document.getElementById('bankName');
-        const accountNumberElement = document.getElementById('accountNumber');
-        const loanAmountElement = document.getElementById('loanAmount');
-
-        const applyDateElement = document.getElementById('applyDate');
-        const applyDurationElement = document.getElementById('durationValue');
-        const lastNameElement = document.getElementById('lName');
-        const firstNameElement = document.getElementById('fName');
-
-
-
-
-        if (savedBankName) {
-            bankNameElement.textContent = savedBankName;
-        }
-
-        if (savedAccountNumber) {
-            accountNumberElement.textContent = savedAccountNumber;
-        }
-
-        if (savedAmount) {
-            loanAmountElement.textContent = savedAmount;
-        }
-
-        if (savedDate) {
-            applyDateElement.textContent = savedDate;
-        }
-
-
-        if (savedLastName) {
-            lastNameElement.textContent = savedLastName;
-        }
-
-        if (savedfirstName) {
-            firstNameElement.textContent = savedfirstName;
-        }
-
-       
-    }
-
-    // Call the retrieve function when the page loads
-    retrieveDataFromLocalStorage();
-
-</script>
-
-
-
-
 
 
 <script>
