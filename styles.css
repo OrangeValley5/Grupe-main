@@ -2735,11 +2735,11 @@ background-color: #191e23;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 8px;
+    font-size: 30px;
 }
 
 
 .amountbx{
-    
     height: 50px;
     margin-left: 20px;
     margin-right: 20px;
@@ -3046,7 +3046,6 @@ body.modal-open3 {
   }
 
 
-  /*********** Safe section **********/
 
    /********** Safe Section ************/
 
@@ -3109,10 +3108,12 @@ margin-top: 40px;
     #lra{
         height: 200px;
         width: 100%;
+        margin-top: 20px;
     }
 
     .cont2-subtitle{
-        color: black;
+        color: rgb(111, 111, 111);
+        font-weight: lighter;
     }
     #safe-subtitle{
         margin-top: 40px;
@@ -3151,7 +3152,6 @@ margin-top: 40px;
         background-color: #000000;
         font-family: Bricolage Grotesque;
         margin-top: 40px;
-
     }
 
 
@@ -3165,4 +3165,19 @@ margin-top: 40px;
     line-height: 30px;
     font-size: 20px;
     font-weight: lighter;
+    }
+
+
+
+    .new-cont2{
+        margin-top: 20px;
+    }
+
+
+    .new-cont2 h3{
+        color: #000;
+        font-size: 26px;
+        font-family: Bricolage Grotesque;
+        margin-bottom: 14px;
+        
     }
