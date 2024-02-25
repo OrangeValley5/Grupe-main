@@ -3210,6 +3210,40 @@ margin-top: 40px;
     .invest-div{
         color: #000;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 40px;
+        font-family: Bricolage Grotesque;
+        }
+
+        .invest-div h4{
+            font-family: Bricolage Grotesque;
+            font-size: 25px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        .invest-div p{
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        .invest-div span{
+            font-weight: bolder;
+        }
+
+        #ide{
+            margin-top: 10px;
+        }
+
+        .spanz{
+            font-weight: bold;
+        }
+
+        .invest-div ul{
+            margin-top: 20px;
+        }
+
+        .invest-div li{
+            margin-top: 12px;
         }
