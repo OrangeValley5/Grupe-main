@@ -503,6 +503,29 @@ nav a{
     color: #fff;
 }
 
+.review-box {
+    margin-top: 20px;
+}
+
+.review-box{
+    margin-top: 14px;
+    border-radius: 8px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-box h3{
+    font-size: 30px;
+    color: #242424;
+}
+
+.review-box p{
+    font-size: 20px;
+    color: #424242;
+}
+
 .trust2d img{
     height: 250px;
     width: 400px;
