@@ -1186,9 +1186,7 @@ footer{
     background-color: #000;
     padding: 20px 30px;
     color: white;
-    margin-top: 20px;
-    font-family: Bricolage Grotesque;
-    
+    font-family: Bricolage Grotesque;  
 }
 
 footer a{
@@ -3248,4 +3246,67 @@ margin-top: 40px;
 
         .invest-div li{
             margin-top: 12px;
+        }
+
+
+        /******** SPOTLIGHT **********/
+
+        .spot-div{
+            height: 100vh;
+            font-family: Bricolage Grotesque;
+        }
+
+
+        .spot-div2{
+            background-color: black;
+            font-family: Bricolage Grotesque;
+            padding: 20px;
+        }
+
+        .spot-div2 h3{
+            color: #007bff;
+            margin-bottom: 14px;
+        }
+
+        .spot-cont{
+            padding: 20px 0px;
+        }
+
+        .spot-cont p{
+            margin: 0px;
+            color: #fff;
+        }
+
+        .spot-div2 h4{
+            color: #9c9c9c;
+            margin-top: 40px;
+        }
+
+        .spot-div2 h2{
+            color: #fff;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .onboard-spot{
+            margin-top: 30px;
+        }
+
+        .onboard-spot h3{
+            margin: 20px 0px;
+            font-size: 24px;
+        }
+
+        .spot-txt{
+            color: #fff;
+            font-size: 24px;
+            font-weight: lighter;
+        }
+
+        .spot-txt2{
+            color: #fff;
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 26px;
+            font-weight: lighter;
+            margin-top: 20px;
         }
