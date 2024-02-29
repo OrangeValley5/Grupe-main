@@ -41,6 +41,63 @@
     
       </script>
 
+      <style>
+        /* The switch - adapted from https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  border-radius: 100%;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+      </style>
+
     
 </head>
 <body >
@@ -62,145 +119,390 @@
 
     <div class="sidebar" id="sidebar">
       <h2>Grupe</h2>
-      <a href="#" class="activez">Dashboard</a>
-      <a href="#">User Profile</a>
-      <a href="#">Deposit</a>
-      <a href="#">Subscribe to plan</a>
-      <a href="#">My trades</a>
-      <a href="#">Transaction History</a>
-      <a href="#">Refer user</a>
-      <a href="#">Profit History</a>
-      <a href="#">Logout</a>
+      <a href="#" class="activez" onclick="openPage('home')">Dashboard</a>
+      <a href="#" onclick="openPage('about')">User Profile</a>
+      <a href="#" onclick="openPage('services')">Deposit</a>
+      <a href="#" onclick="openPage('contact')">Subscribe to plan</a>
+      <a href="#" onclick="openPage('home')">My trades</a>
+      <a href="#" onclick="openPage('home')">Transaction History</a>
+      <a href="#" onclick="openPage('home')">Refer user</a>
+      <a href="#" onclick="openPage('home')">Profit History</a>
+      <a href="#" onclick="openPage('home')">Logout</a>
   </div>
   
   <div class="content">
-      <h2>Dashboard</h2>
-      <!-- Add more content here -->
+     
+
+   <div class="main" id="home">
+    <h2>Dashboard</h2>
+    <!-- Add more content here -->
 
 
-       <!-- TradingView Widget BEGIN -->
-       <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+     <!-- TradingView Widget BEGIN -->
+     <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+      "symbols": [
         {
-        "symbols": [
-          {
-            "proName": "FOREXCOM:SPXUSD",
-            "title": "S&P 500"
-          },
-          {
-            "proName": "FOREXCOM:NSXUSD",
-            "title": "US 100"
-          },
-          {
-            "proName": "FX_IDC:EURUSD",
-            "title": "EUR to USD"
-          },
-          {
-            "proName": "BITSTAMP:BTCUSD",
-            "title": "Bitcoin"
-          },
-          {
-            "proName": "BITSTAMP:ETHUSD",
-            "title": "Ethereum"
-          }
-        ],
-        "showSymbolLogo": true,
-        "isTransparent": true,
-        "displayMode": "adaptative",
-        "colorTheme": "light",
-        "locale": "en"
-      }
-        </script>
-      </div>
-      <!-- TradingView Widget END -->
+          "proName": "FOREXCOM:SPXUSD",
+          "title": "S&P 500"
+        },
+        {
+          "proName": "FOREXCOM:NSXUSD",
+          "title": "US 100"
+        },
+        {
+          "proName": "FX_IDC:EURUSD",
+          "title": "EUR to USD"
+        },
+        {
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "Bitcoin"
+        },
+        {
+          "proName": "BITSTAMP:ETHUSD",
+          "title": "Ethereum"
+        }
+      ],
+      "showSymbolLogo": true,
+      "isTransparent": true,
+      "displayMode": "adaptative",
+      "colorTheme": "light",
+      "locale": "en"
+    }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
 
-      <div class="amount-container">
+    <div class="amount-container">
 
-        <div class="amount-children">
-          <div class="amount-text">
-            <h6> Account Balance</h6>
+      <div class="amount-children">
+        <div class="amount-text">
+          <h6> Account Balance</h6>
 
-            <h5>$6.00</h5>
-          </div>
-
-         
-
-        </div>
-
-        <div class="amount-children">
-          <div class="amount-text">
-            <h6>Profit</h6>
-
-            <h5>$6.00</h5>
-          </div>
-
-          
-
-        </div>
-
-        <div class="amount-children">
-          <div class="amount-text">
-            <h6>Deposit</h6>
-
-            <h5>$6.00</h5>
-          </div>
-
-          
-
-        </div>
-
-        <div class="amount-children">
-          <div class="amount-text">
-            <h6>Total Bonus</h6>
-
-            <h5>$6.00</h5>
-          </div>
-
-          
-
+          <h5>$6.00</h5>
         </div>
 
        
 
+      </div>
+
+      <div class="amount-children">
+        <div class="amount-text">
+          <h6>Profit</h6>
+
+          <h5>$0.00</h5>
+        </div>
+
+        
+
+      </div>
+
+      <div class="amount-children">
+        <div class="amount-text">
+          <h6>Deposit</h6>
+
+          <h5>$0.00</h5>
+        </div>
+
+        
+
+      </div>
+
+      <div class="amount-children">
+        <div class="amount-text">
+          <h6>Total Bonus</h6>
+
+          <h5>$6.00</h5>
+        </div>
+
+        
+
+      </div>
+
+     
+
+
+
+
+    </div>
+
+    <h2>Live Coin Chart</h2>
+
+
+    <!-- TradingView Widget BEGIN -->
+   <div class="tradingview-widget-container" style="height:100%;width:100%">
+   <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+   <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+   {
+   "autosize": true,
+   "symbol": "BITSTAMP:BTCUSD",
+   "height": 500,
+   "interval": "D",
+   "timezone": "Etc/UTC",
+   "theme": "light",
+   "style": "1",
+   "locale": "en",
+   "enable_publishing": false,
+   "allow_symbol_change": true,
+   "calendar": false,
+   "support_host": "https://www.tradingview.com"
+  }
+   </script>
+ </div>
+ <!-- TradingView Widget END -->
+  </div>
+  
+  <div class="main" id="about" style="display:none;">
+    
+    <h2>Profile</h2>
+    <div class="profile-switch" id="profile-switch">
+
+      <div class="switch-container">
+      <a href="#" onclick="openPage2('personal-settings')">Personal Settings</a>
+      <a href="#" onclick="openPage2('bank')">Withdrawal Settings</a>
+      <a href="#" onclick="openPage2('security')">Password/Security</a>
+      <a href="#" onclick="openPage2('others')">Other Settings</a>
+      </div>
+      
+
+
+      <div class="main2" id="personal-settings" style="display:block;">
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Fullname</p>
+            <input type="text">
+          </div>
+
+          <div class="input-sub">
+            <p>Email address</p>
+            <input type="text">
+          </div>
+        </div>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Phone Number</p>
+            <input type="text">
+          </div>
+
+          <div class="input-sub">
+            <p>Date of Birth</p>
+            <input type="text">
+          </div>
+        </div>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Fullname</p>
+            <input type="text">
+          </div>
+
+          <div class="input-sub">
+            <p>Fullname</p>
+            <input type="text">
+          </div>
+        </div>
+
+
+        <div class="button-div">
+
+          <a class="profile-button" href="">Submit</a>
+  
+        </div>
+  
+      </div>
+
+
+     
+      <div class="main2" id="bank" style="display:none;">
+        <h2>Bank Account</h2>
+        <p class="margin20">Enter the account where you would like to receive your funds</p>
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Bank Name</p>
+            <input type="text" placeholder="Enter your bank name">
+          </div>
+
+          <div class="input-sub">
+            <p>Account Name</p>
+            <input type="text"  placeholder="Enter your account name">
+          </div>
+        </div>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Account Number</p>
+            <input type="number" placeholder="Enter your bank account number">
+          </div>
+
+          <div class="input-sub">
+            <p>Swift Code</p>
+            <input type="text" placeholder="Enter your swift code">
+          </div>
+        </div>
+
+        <h2 class="margin40">Crypto Currency</h2>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Bitcoin</p>
+            <input type="text" placeholder="Enter bitcoin address">
+          </div>
+
+          <div class="input-sub">
+            <p>Ethereum</p>
+            <input type="text" placeholder="Enter Ethereum address">
+          </div>
+        </div>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Litecoin</p>
+            <input type="text" placeholder="Enter your Litecoin address">
+          </div>
+
+        </div>
+
+
+        <div class="button-div">
+
+          <a class="profile-button" href="">save</a>
+  
+        </div>
+      </div>
+
+
+      <div class="main2" id="security" style="display:none;">
+        
+
+        <h2 class="margin40">Reset Password</h2>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Current password</p>
+            <input type="text" placeholder="Enter your current password ">
+          </div>
+
+          <div class="input-sub">
+            <p>New Password</p>
+            <input type="text" placeholder="Enter your new password">
+          </div>
+        </div>
+
+
+        <div class="input-container">
+
+          <div class="input-sub">
+            <p>Confirm Password</p>
+            <input type="text" placeholder="Confirm password">
+          </div>
+
+        </div>
+
+
+
+       
+
+        
+
+
+
+        <div class="button-div">
+
+          <a class="profile-button" href="">save</a>
+  
+        </div>
 
 
 
       </div>
 
-      <h2>Live Coin Chart</h2>
+
+      <div class="main2" id="others" style="display:none;">
+        
+
+        <h2 class="margin40">Other settings</h2>
 
 
-      <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "autosize": true,
-  "symbol": "BITSTAMP:BTCUSD",
-  "height": 500,
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "light",
-  "style": "1",
-  "locale": "en",
-  "enable_publishing": false,
-  "allow_symbol_change": true,
-  "calendar": false,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
+        <div class="others-container">
 
+            <p>Send confirmation otp to my email when withdrawing funds</p>
+          
+            <label class="switch">
+              <input type="checkbox" id="toggleSwitch">
+              <span class="slider"></span>
+            </label>
+
+        </div>
+
+
+        <div class="others-container">
+
+          <p>Notify me via email when i get my profits</p>
+        
+          <label class="switch">
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
+          </label>
+
+      </div>
+
+      <div class="others-container">
+
+        <p>Notify me via email when my investment plan expires</p>
+      
+        <label class="switch">
+          <input type="checkbox" id="toggleSwitch">
+          <span class="slider"></span>
+        </label>
+
+    </div>
+
+
+        
+
+
+
+      </div>
+
+
+      
+  </div>
+  
+  <div class="main" id="services" style="display:none;">
+    <h2>Services</h2>
+    <p>Explore our services</p>
+  </div>
+  
+  <div class="main" id="contact" style="display:none;">
+    <h2>Contact</h2>
+    <p>Get in touch with us</p>
+  </div>
 
   </div>
   
   <script>
       function toggleSidebar() {
           var sidebar = document.getElementById('sidebar');
-          sidebar.classList.toggle('show'); // Toggle the 'show' class on sidebar
+          sidebar.classList.toggle('show'); / Toggle the 'show' class on sidebar
       }
   </script>
     
@@ -289,6 +591,45 @@
         }
     }
 </script>
+
+<script>
+  function openPage2(pageName2) {
+  var i, tabcontent;
+  tabcontent = document.getElementsByClassName("main2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  document.getElementById(pageName2).style.display = "block";
+}
+
+</script>
+
+<script>
+  function openPage(pageName) {
+  var i, tabcontent;
+  tabcontent = document.getElementsByClassName("main");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  document.getElementById(pageName).style.display = "block";
+}
+</script>
+
+<script>
+
+  // Check if there is a stored value for the switch
+const switchState = localStorage.getItem('switchState');
+if (switchState && switchState === 'true') {
+  document.getElementById('toggleSwitch').checked = true;
+}
+
+// Add event listener to the switch
+document.getElementById('toggleSwitch').addEventListener('change', function() {
+  localStorage.setItem('switchState', this.checked); // Store the state in localStorage
+});
+
+
+  </script>
 
  
 
