@@ -119,6 +119,8 @@ input:checked + .slider:before {
 
     <div class="sidebar" id="sidebar">
       <h2>Grupe</h2>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
       <a href="#" class="activez" onclick="openPage('home')">Dashboard</a>
       <a href="#" onclick="openPage('about')">User Profile</a>
       <a href="#" onclick="openPage('services')">Deposit</a>
@@ -134,7 +136,7 @@ input:checked + .slider:before {
      
 
    <div class="main" id="home">
-    <h2>Dashboard</h2>
+    <h2 onclick="toggleSidebar()">Dashboard</h2>
     <!-- Add more content here -->
 
 
@@ -630,6 +632,17 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
 
 
   </script>
+
+  <script>
+    function openNav() {
+  document.getElementById("sidebar").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+}
+
+    </script>
 
  
 
