@@ -60,70 +60,149 @@
         </div>
     </div>
 
-   
-    <div>
-        <div class="section1b" >
+    <div class="sidebar" id="sidebar">
+      <h2>Grupe</h2>
+      <a href="#" class="activez">Dashboard</a>
+      <a href="#">User Profile</a>
+      <a href="#">Deposit</a>
+      <a href="#">Subscribe to plan</a>
+      <a href="#">My trades</a>
+      <a href="#">Transaction History</a>
+      <a href="#">Refer user</a>
+      <a href="#">Profit History</a>
+      <a href="#">Logout</a>
+  </div>
+  
+  <div class="content">
+      <h2>Dashboard</h2>
+      <!-- Add more content here -->
 
-            <h2>Dashboard</h2>
-            <div class="new-cont">
-               
 
-                <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+       <!-- TradingView Widget BEGIN -->
+       <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+        "symbols": [
+          {
+            "proName": "FOREXCOM:SPXUSD",
+            "title": "S&P 500"
+          },
+          {
+            "proName": "FOREXCOM:NSXUSD",
+            "title": "US 100"
+          },
+          {
+            "proName": "FX_IDC:EURUSD",
+            "title": "EUR to USD"
+          },
+          {
+            "proName": "BITSTAMP:BTCUSD",
+            "title": "Bitcoin"
+          },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
+          }
+        ],
+        "showSymbolLogo": true,
+        "isTransparent": true,
+        "displayMode": "adaptative",
+        "colorTheme": "light",
+        "locale": "en"
+      }
+        </script>
+      </div>
+      <!-- TradingView Widget END -->
+
+      <div class="amount-container">
+
+        <div class="amount-children">
+          <div class="amount-text">
+            <h6> Account Balance</h6>
+
+            <h5>$6.00</h5>
+          </div>
+
+         
+
+        </div>
+
+        <div class="amount-children">
+          <div class="amount-text">
+            <h6>Profit</h6>
+
+            <h5>$6.00</h5>
+          </div>
+
+          
+
+        </div>
+
+        <div class="amount-children">
+          <div class="amount-text">
+            <h6>Deposit</h6>
+
+            <h5>$6.00</h5>
+          </div>
+
+          
+
+        </div>
+
+        <div class="amount-children">
+          <div class="amount-text">
+            <h6>Total Bonus</h6>
+
+            <h5>$6.00</h5>
+          </div>
+
+          
+
+        </div>
+
+       
+
+
+
+
+      </div>
+
+      <h2>Live Coin Chart</h2>
+
+
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "symbols": [
-    {
-      "proName": "FOREXCOM:SPXUSD",
-      "title": "S&P 500"
-    },
-    {
-      "proName": "FOREXCOM:NSXUSD",
-      "title": "US 100"
-    },
-    {
-      "proName": "FX_IDC:EURUSD",
-      "title": "EUR to USD"
-    },
-    {
-      "proName": "BITSTAMP:BTCUSD",
-      "title": "Bitcoin"
-    },
-    {
-      "proName": "BITSTAMP:ETHUSD",
-      "title": "Ethereum"
-    }
-  ],
-  "showSymbolLogo": true,
-  "isTransparent": true,
-  "displayMode": "adaptative",
-  "colorTheme": "light",
-  "locale": "en"
+  "autosize": true,
+  "symbol": "BITSTAMP:BTCUSD",
+  "height": 500,
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "en",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "calendar": false,
+  "support_host": "https://www.tradingview.com"
 }
   </script>
 </div>
 <!-- TradingView Widget END -->
-               
 
 
-            </div>
-
-            <div class="testh">
-                
-            </div>
-
-            
-
-            
-           
-           
-
-
-           
-       
-
-    </div>
+  </div>
+  
+  <script>
+      function toggleSidebar() {
+          var sidebar = document.getElementById('sidebar');
+          sidebar.classList.toggle('show'); // Toggle the 'show' class on sidebar
+      }
+  </script>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
@@ -134,9 +213,6 @@
   <script>
     AOS.init();
   </script>
-
-
-
 
 
 <script>
@@ -197,11 +273,6 @@
 
 </script>
 
-
-
-
-
-
 <script>
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -214,7 +285,7 @@
     // Close the modal when the user clicks anywhere outside of it
     window.onclick = function(event) {
         if (event.target == modal) {
-            modal.style.display = "block";
+            modal.style.display = "none";
         }
     }
 </script>
