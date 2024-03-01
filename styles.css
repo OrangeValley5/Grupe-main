@@ -3367,8 +3367,9 @@ margin-top: 40px;
             padding: 20px;
             height: 100vh;
             position: fixed;
-            transition: width 0.3s; /* Add transition for smoother animation */
+            transition: width 0.5s; 
             font-family: Bricolage Grotesque;
+            
         }
 
     
@@ -3417,7 +3418,7 @@ margin-top: 40px;
             }
     
             .content {
-                margin-left: 30px; /* Adjust content margin when sidebar is collapsed */
+                margin-left: 0px; /* Adjust content margin when sidebar is collapsed */
             }
 
             .amount-container{
@@ -3439,7 +3440,11 @@ margin-top: 40px;
                 transition: width 0.3s; /* Add transition for smoother animation */
                 font-family: Bricolage Grotesque;
             }
+
+           
         }
+
+    
 
 
         
