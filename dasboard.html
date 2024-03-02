@@ -42,7 +42,6 @@
       </script>
 
       <style>
-        /* The switch - adapted from https://www.w3schools.com/howto/howto_css_switch.asp */
 .switch {
   position: relative;
   display: inline-block;
@@ -95,6 +94,32 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+
+          /* Media query for mobile */
+          @media screen and (max-width: 768px) {
+
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 45px;
+                height: 22px;
+
+            }
+
+            .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  border-radius: 100%;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+        }
 
       </style>
 

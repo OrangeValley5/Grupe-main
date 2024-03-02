@@ -3651,6 +3651,12 @@ margin-top: 40px;
                 display: flex;
                 flex-wrap: wrap;
             }
+
+            .others-container p{
+                font-size: 12px;
+                font-weight: lighter;
+                width: 200px;
+            }
         }
 
    
