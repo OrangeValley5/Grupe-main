@@ -150,9 +150,9 @@ input:checked + .slider:before {
       <a href="#" id="invinsible" class="activez" onclick="openPage('home')">Dashboard</a>
       <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()">User Profile</a>
       <a href="#" class="menu-link" onclick="openPage('deposit'), toggleNav()">Deposit</a>
-      <a href="#" class="menu-link" onclick="openPage('contact')">Subscribe to plan</a>
+      <a href="#" class="menu-link" onclick="openPage('subscribe'), toggleNav()">Subscribe to plan</a>
       <a href="#" class="menu-link" onclick="openPage('home')">My trades</a>
-      <a href="#" class="menu-link" onclick="openPage('home')">Transaction History</a>
+      <a href="#" class="menu-link" onclick="openPage('transact')">Transaction History</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Refer user</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Profit History</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Logout</a>
@@ -609,6 +609,251 @@ input:checked + .slider:before {
 
   </div>
   
+
+  <div class="main" id="subscribe" style="display:none;">
+    
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Choose plan</h2>
+    </div>
+    <div class="profile-switch" id="profile-switch">
+
+      
+      <div class="prev-container">
+        <h1 data-aos="fade-up">Available packages</h1>
+        <p data-aos="fade-up" class="pee">We want you to love it without worrying!
+             All subscription has a 30-day money-back guarantee.</p>
+    
+
+    <div class="grid" data-aos="fade-up">
+        <div class="grid-container" data-aos="fade-up">
+            <h4>Lite plan</h4>
+            <div class="amount">
+                <h2>$25</h2>
+                <p>minimum deposit</p>
+            </div>
+            <p>6% daily ROI for 10days</p>
+            <div class="btn-container">
+                <a href="#"><button>Choose Package</button></a>
+            </div>
+            <h4>Features</h4>
+            <p>Lite Plan</p>
+            <div class="features">
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Minimum deposit $25</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Maximum deposit $25</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Instant withdrawals</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/cancel.png" alt="">
+                    <p>7 days duration</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/cancel.png" alt="">
+                    <p>$10 gift bonus</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid-container" data-aos="fade-up">
+            <h4>Basic plan</h4>
+            <div class="amount">
+                <h2>$50</h2>
+                <p>minimum deposit</p>
+            </div>
+            <p>1 extra free month</p>
+            <div class="btn-container">
+                <a href="#"><button>Choose package</button></a>
+            </div>
+            <h4>Features</h4>
+            <p>Everything in our lite plan plus</p>
+            <div class="features">
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Minimum deposit $50</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Maximum deposit $25</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Instant withdrawal</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Limited access to VIP members</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/cancel.png" alt="">
+                    <p>Access to VIP badge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container" data-aos="fade-up">
+            <div class="first-row">
+                <h4>Premium plan</h4>
+                <div class="tag">
+                    <p>Most popular</p>
+                </div>
+            </div>
+            <div class="amount">
+                <h2>$100</h2>
+                <p>minimum deposit</p>
+            </div>
+            <p>1 extra free month</p>
+            <div class="btn-container">
+                <a href="#"><button>Choose package</button></a>
+            </div>
+            <h4>Features</h4>
+            <p>Everything in our basic plan plus</p>
+            <div class="features">
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Minimum deposit $100</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Maximum deposit $25</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Instant withdrawals</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Access to VIP chats</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/cancel.png" alt="">
+                    <p>Access to VIP badge</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container" data-aos="fade-up">
+            <h4>Ultimate plan</h4>
+            <div class="amount">
+                <h2>$500</h2>
+                <p>minimum deposit</p>
+            </div>
+            <p>2 extra free months</p>
+            <div class="btn-container">
+                <a href="#"><button>Get started</button></a>
+            </div>
+            <h4>Features</h4>
+            <p>Everything in our premium plan plus</p>
+            <div class="features">
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Unlimited Chats</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Unlimited profile views</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Unlimited Gifts</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Access to VIP Chats</p>
+                </div>
+                <div class="ft-items">
+                    <img src="images/yeswhite.png" alt="">
+                    <p>Access to VIP badge</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+  </div>
+  </div>
+
+  <div class="main3" id="transact" style="display:none;">
+
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Transactions</h2>
+    </div>
+
+
+    <div class="deposit-container">
+        <a href="#tab1" id="tab1-link" onclick="openPage3('depositz')">Deposits</a>
+        <a href="#tab2" id="tab2-link" onclick="openPage3('withdraw')">Withdrawals</a>
+        <a href="#tab3" id="tab3-link" onclick="openPage3('security')">Others</a>
+        </div>
+
+      
+
+  </div>
+
+  <div id="tab1" class="depositz" style="display:none;">
+
+
+    <div class="depo-topbar">
+
+      <div>
+        <label for="entries">Show entries:</label>
+        <select id="entries" name="entries">
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+
+     
+
+
+        <input class="search" type="text" placeholder="search">
+
+    </div>
+
+    <div class="slimline"></div>
+
+    <div class="table-header">
+      <p>Amount</p>
+      <p>Payment mode</p>
+      <p>Status</p>
+      <p>Date</p>
+    </div>
+
+    <div class="slimline"></div>
+
+    <div class="transaction-data">
+      <p>You havent made any transactions yet</p>
+    </div>
+
+    <div class="slimline2"></div>
+
+    <div class="entries-cont">
+      <p>Showing 0 to 0 of 0 entries</p>
+
+      <div class="btns">
+
+        <a href="">Previous</a>
+        <a href="">Next</a>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
   <script>
       function toggleSidebar() {
           var sidebar = document.getElementById('sidebar');
@@ -726,6 +971,13 @@ input:checked + .slider:before {
 }
 </script>
 
+
+
+
+
+
+
+
 <script>
 
   // Check if there is a stored value for the switch
@@ -763,6 +1015,34 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
 }
 
   </script>
+
+
+  <script>
+
+    document.getElementById('tab1').style.display = 'block';
+
+
+        document.getElementById('tab1-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('tab1').style.display = 'block';
+            document.getElementById('tab2').style.display = 'none';
+            document.getElementById('tab3').style.display = 'none';
+        });
+
+        document.getElementById('tab2-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('tab1').style.display = 'none';
+            document.getElementById('tab2').style.display = 'block';
+            document.getElementById('tab3').style.display = 'none';
+        });
+
+        document.getElementById('tab3-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('tab1').style.display = 'none';
+            document.getElementById('tab2').style.display = 'none';
+            document.getElementById('tab3').style.display = 'block';
+        });
+    </script>
 
   
  
