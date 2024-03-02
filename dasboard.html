@@ -123,7 +123,7 @@ input:checked + .slider:before {
       <h2>Grupe</h2>
 
       <a href="#" id="invinsible" class="activez" onclick="openPage('home')">Dashboard</a>
-      <a href="#" class="menu-link" onclick="openPage('about')">User Profile</a>
+      <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()">User Profile</a>
       <a href="#" class="menu-link" onclick="openPage('services')">Deposit</a>
       <a href="#" class="menu-link" onclick="openPage('contact')">Subscribe to plan</a>
       <a href="#" class="menu-link" onclick="openPage('home')">My trades</a>
@@ -264,7 +264,10 @@ input:checked + .slider:before {
   
   <div class="main" id="about" style="display:none;">
     
-    <h2>Profile</h2>
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Profile</h2>
+    </div>
     <div class="profile-switch" id="profile-switch">
 
       <div class="switch-container">
