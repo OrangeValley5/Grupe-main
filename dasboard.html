@@ -149,7 +149,7 @@ input:checked + .slider:before {
 
       <a href="#" id="invinsible" class="activez" onclick="openPage('home')">Dashboard</a>
       <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()">User Profile</a>
-      <a href="#" class="menu-link" onclick="openPage('deposit')">Deposit</a>
+      <a href="#" class="menu-link" onclick="openPage('deposit'), toggleNav()">Deposit</a>
       <a href="#" class="menu-link" onclick="openPage('contact')">Subscribe to plan</a>
       <a href="#" class="menu-link" onclick="openPage('home')">My trades</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Transaction History</a>
@@ -541,12 +541,12 @@ input:checked + .slider:before {
     </div>
     <div class="profile-switch" id="profile-switch">
 
-      <h2>Fund Wallet</h2>
+      <h4>Fund Wallet</h4>
             <div class="new-cont">
             
             <h6>Enter amount</h6>
 
-            <input class="amountbx"  type="text">
+            <input class="amountbx"  type="number" placeholder="$0">
 
 
             <h6>Choose your preferred funding method</h6>
