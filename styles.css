@@ -2808,8 +2808,9 @@ background-color: #191e23;
 
 .pay-options{
     height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
     margin-bottom: 20px;
     padding-left: 14px;
     padding-right: 14px;
@@ -3576,9 +3577,23 @@ margin-top: 40px;
         }
 
 
+        .pay-main{
+            display: flex;
+            margin-top: 20px;
+            gap: 4px;
+            
+        }
+
+
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
             
+            .pay-main{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                gap: 4px;
+            }
     
             .sidebar.show {
                 width: 250px; /* Expand the sidebar when it's toggled */
@@ -3656,6 +3671,24 @@ margin-top: 40px;
                 font-size: 12px;
                 font-weight: lighter;
                 width: 200px;
+            }
+
+            .pay-options{
+                height: 50px;
+                width: 100%;
+                margin-left: 4px;
+                margin-right: 4px;
+                margin-bottom: 20px;
+                padding-left: 14px;
+                padding-right: 14px;
+                background-color: #fff;
+                border-radius: 8px;
+                font-family: Bricolage Grotesque;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                
             }
         }
 

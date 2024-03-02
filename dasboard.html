@@ -149,7 +149,7 @@ input:checked + .slider:before {
 
       <a href="#" id="invinsible" class="activez" onclick="openPage('home')">Dashboard</a>
       <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()">User Profile</a>
-      <a href="#" class="menu-link" onclick="openPage('services')">Deposit</a>
+      <a href="#" class="menu-link" onclick="openPage('deposit')">Deposit</a>
       <a href="#" class="menu-link" onclick="openPage('contact')">Subscribe to plan</a>
       <a href="#" class="menu-link" onclick="openPage('home')">My trades</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Transaction History</a>
@@ -167,7 +167,6 @@ input:checked + .slider:before {
       <h2>Dashboard</h2>
     </div>
     
-    <!-- Add more content here -->
 
 
      <!-- TradingView Widget BEGIN -->
@@ -518,6 +517,82 @@ input:checked + .slider:before {
 
       </div>
 
+
+      
+  </div>
+  
+  <div class="main" id="services" style="display:none;">
+    <h2>Services</h2>
+    <p>Explore our services</p>
+  </div>
+  
+  <div class="main" id="contact" style="display:none;">
+    <h2>Contact</h2>
+    <p>Get in touch with us</p>
+  </div>
+
+  </div>
+
+  <div class="main" id="deposit" style="display:none;">
+    
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Deposit</h2>
+    </div>
+    <div class="profile-switch" id="profile-switch">
+
+      <h2>Fund Wallet</h2>
+            <div class="new-cont">
+            
+            <h6>Enter amount</h6>
+
+            <input class="amountbx"  type="text">
+
+
+            <h6>Choose your preferred funding method</h6>
+
+            <div class="pay-main">
+
+
+              <div class="pay-options">
+
+                <img src="images/btc.png" alt="">
+                <p>Bitcoin</p>
+            </div>
+
+            <div class="pay-options">
+
+                <img src="images/eth.png" alt="">
+                <p>Ethereum</p>
+            </div>
+
+            <div class="pay-options">
+
+                <img src="images/capp.png" alt="">
+                <p>Cashapp</p>
+            </div>
+
+            <div class="pay-options">
+
+                <img src="images/apple.png" alt="">
+                <p>Apple pay</p>
+            </div>
+
+            <div class="pay-options">
+
+                <img src="images/gpay.png" alt="">
+                <p>Google pay</p>
+            </div>
+
+            </div>
+
+           
+
+
+            <a class="pay-btn" href="checkout.html"> Continue</a></button>
+
+            </div>
+      
 
       
   </div>
