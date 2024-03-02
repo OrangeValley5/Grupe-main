@@ -118,8 +118,9 @@ input:checked + .slider:before {
     </div>
 
     <div class="sidebar" id="sidebar">
+      <a href="javascript:void(0)" id="closer" class="closebtn" onclick="toggleNav()">&times;</a>
+
       <h2>Grupe</h2>
-      <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
 
       <a href="#" id="invinsible" class="activez" onclick="openPage('home')">Dashboard</a>
       <a href="#" class="menu-link" onclick="openPage('about')">User Profile</a>
@@ -136,7 +137,11 @@ input:checked + .slider:before {
      
 
    <div class="main" id="home">
-    <h2 onclick="toggleNav()">Dashboard</h2>
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Dashboard</h2>
+    </div>
+    
     <!-- Add more content here -->
 
 
@@ -514,6 +519,7 @@ input:checked + .slider:before {
     <script src="./Mail.js"></script>
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <script>
     AOS.init();
   </script>
@@ -634,16 +640,9 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
   </script>
 
   <script>
-    function openNav() {
-  document.getElementById("sidebar").style.width = "250px";
-  document.getElementById("invinsible").style.display = "block";
-}
 
-function closeNav() {
-  document.getElementById("sidebar").style.width = "0";
-  document.getElementById("invinsible").style.display = "none";
+    var sidebar = document.getElementById("sidebar");
 
-}
 
     </script>
 
@@ -661,6 +660,8 @@ function closeNav() {
 }
 
   </script>
+
+  
  
 
 </body>
