@@ -3743,6 +3743,110 @@ margin-top: 40px;
             width: 20px;
             height: 20px;
         }
+
+
+        .profit-topbar{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+
+
+        .profit-topbar label{
+            font-size: 10px;
+        }
+
+        .profit-topbar select{
+            font-size: 14px;
+            border-radius: 10px;
+            font-family: Bricolage Grotesque;
+            border: 1px solid x#777777;
+            padding: 4px 4px;
+        }
+
+        .profit-topbar input{
+            border: 1px solid #777777;
+            padding: 8px 8px;
+            width: 150pxs;
+            font-family: Bricolage Grotesque;
+
+            border-radius: 10px;
+        }
+
+
+        .modal5 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 10000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100vh; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.5); /* Black w/ 50% opacity */
+            /* Location of the box */
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content5 {
+            background-color: #fefefe;
+            margin: 8% auto; /* 5% from the top and centered */
+            padding: 20px 50px;
+            border-radius: 14px;
+            color: black;
+            width: 50%;
+            height: 70%; /* Could be more or less, depending on screen size */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            font-family: Bricolage Grotesque;
+        }
+
+
+        .modal-content5 .flow{
+            margin: 0px 150px;
+            width: 300px;
+        }
+
+
+        .modal-content5 img{
+            width: 380px;
+            height: 300px;
+        }
+        
+        .modal-content5 p{
+            text-align: center;
+            font-size: 14px;
+            color: #8c8c8c;
+            margin-top: 14px;
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 38px;
+        }
+        
+       .modal-content5 .closebtn{
+        text-decoration: none;
+        align-self: flex-end;
+        color: #000;
+        background-color: #e2e2e2;
+        padding: 2px 12px;
+        border-radius: 50%;
+       }
+        
+        
+        .modal5.open {
+            display: block; /* Show the modal when open */
+        }
+        
+        .modal25open .modal-content5 {
+            margin-left: 0; /* Slide in from the left when open */
+        }
+        
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
             
@@ -3887,6 +3991,43 @@ margin-top: 40px;
                 margin-top: 40px;
                 margin-bottom: 14px;
             }
+
+
+            .modal-content5 {
+                background-color: #fefefe;
+                margin: 15% auto; /* 5% from the top and centered */
+                padding: 20px;
+                border-radius: 14px;
+                color: black;
+                width: 80%;
+                height: 60%; /* Could be more or less, depending on screen size */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                font-family: Bricolage Grotesque;
+            }
+
+            .modal-content5 .flow{
+                width: 200px;
+            }
+
+            .modal-content5 img{
+                width: 300px;
+                height: 200px;
+            }
+
+
+            .modal-content5 .closebtn{
+                text-decoration: none;
+                align-self: flex-end;
+                color: #000;
+                background-color: #e2e2e2;
+                padding: 0px 8px;
+                border-radius: 50%;
+                font-size: 8px;
+               }
+    
             
         }
 

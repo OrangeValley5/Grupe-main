@@ -142,6 +142,25 @@ input:checked + .slider:before {
         </div>
     </div>
 
+
+    <div id="myModal5" class="modal5">
+      <div class="modal-content5">
+
+        <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal()">&times;</a>
+
+          <h2>Oops</h2>
+          <p>you do not have anay trades at the moment. Fund your account to start trading</p>
+
+          <div class="cirx">
+
+          </div>
+
+          <img src="images/oops.png" alt="">
+
+          <a class="flow"   href="sub.html">Make deposit</a>
+      </div>
+  </div>
+
     <div class="sidebar" id="sidebar">
       <a href="javascript:void(0)" id="closer" class="closebtn" onclick="toggleNav()">&times;</a>
 
@@ -151,10 +170,10 @@ input:checked + .slider:before {
       <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()">User Profile</a>
       <a href="#" class="menu-link" onclick="openPage('deposit'), toggleNav()">Deposit</a>
       <a href="#" class="menu-link" onclick="openPage('subscribe'), toggleNav()">Subscribe to plan</a>
-      <a href="#" class="menu-link" onclick="openPage('home')">My trades</a>
+      <a href="#" class="menu-link" onclick="openModal()">My trades</a>
       <a href="#" class="menu-link" onclick="openPage('transact'), toggleNav()">Transaction History</a>
       <a href="#" class="menu-link" onclick="openPage('refer')">Refer user</a>
-      <a href="#" class="menu-link" onclick="openPage('home')">Profit History</a>
+      <a href="#" class="menu-link" onclick="openPage('profit')">Profit History</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Logout</a>
   </div>
   
@@ -1051,6 +1070,75 @@ input:checked + .slider:before {
 
   </div>
 
+  <div class="main"  id="profit" style="display:none;">
+
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Profit history</h2>
+    </div>
+
+
+
+        <div id="tab1"  style="display:block;">
+
+         
+          <div class="profit-topbar">
+      
+            <div>
+              <label for="entries">Show entries:</label>
+              <select id="entries" name="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+      
+           
+      
+      
+              <input class="search" type="text" placeholder="search">
+      
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="table-header">
+            <p>Plan</p>
+            <p>Amount</p>
+            <p>Type</p>
+            <p>Date created</p>
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="transaction-data">
+            <p>You are yet to make any refrrals</p>
+          </div>
+      
+          <div class="slimline2"></div>
+      
+          <div class="entries-cont">
+            <p>Showing 0 to 0 of 0 entries</p>
+      
+            <div class="btns">
+      
+              <a href="">Previous</a>
+              <a href="">Next</a>
+      
+            </div>
+          </div>
+      
+      
+      
+      
+        </div>
+
+       
+      
+
+  </div>
+
 
  
   <script>
@@ -1230,6 +1318,31 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
         });
 </script>
 
+
+<script>
+    // Get the modal
+    var modal5 = document.getElementById("myModal5");
+
+    function openModal() {
+            modal5.style.display = "block";
+            setTimeout(function() {
+                modal5.classList.add("open5");
+            }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+            document.body.classList.add('modal-open5');
+        }
+
+        function closeModal() {
+            modal5.classList.remove("open5");
+            setTimeout(function() {
+                modal5.style.display = "none";
+            }, 50); // Delay added to match the transition duration
+            document.body.classList.remove('modal-open5'); 
+        }
+
+    // Close the modal when the user clicks anywhere outside of it
+   
+</script>
   
  
 
