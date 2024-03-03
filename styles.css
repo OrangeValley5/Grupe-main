@@ -3686,7 +3686,63 @@ margin-top: 40px;
             border-radius: 10px;
         }
 
+        #tab3 h3{
+            margin-bottom: 40px;
+        }
 
+        #tab2 h3{
+            margin-bottom: 40px;
+        }
+
+        #tab1 h3{
+            margin-bottom: 40px;
+        }
+
+        .ref-container{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ref-box{
+            height: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            padding-left: 14px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            font-family: Bricolage Grotesque;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+            margin-top: 20px;
+        }
+        
+        .ref-box p{
+            font-size: 11px;
+            color: #7d7d7d;
+        }
+        
+        .ref-btn{
+            height: 100%;
+            width: 60px;
+            border: 1px solid #c8c8c8;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ref-btn img{
+            width: 20px;
+            height: 20px;
+        }
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
             

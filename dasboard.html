@@ -152,8 +152,8 @@ input:checked + .slider:before {
       <a href="#" class="menu-link" onclick="openPage('deposit'), toggleNav()">Deposit</a>
       <a href="#" class="menu-link" onclick="openPage('subscribe'), toggleNav()">Subscribe to plan</a>
       <a href="#" class="menu-link" onclick="openPage('home')">My trades</a>
-      <a href="#" class="menu-link" onclick="openPage('transact')">Transaction History</a>
-      <a href="#" class="menu-link" onclick="openPage('home')">Refer user</a>
+      <a href="#" class="menu-link" onclick="openPage('transact'), toggleNav()">Transaction History</a>
+      <a href="#" class="menu-link" onclick="openPage('refer')">Refer user</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Profit History</a>
       <a href="#" class="menu-link" onclick="openPage('home')">Logout</a>
   </div>
@@ -782,7 +782,7 @@ input:checked + .slider:before {
   </div>
   </div>
 
-  <div class="main3" id="transact" style="display:none;">
+  <div class="main"  id="transact" style="display:none;">
 
     <div class="first-div">
       <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
@@ -791,69 +791,268 @@ input:checked + .slider:before {
 
 
     <div class="deposit-container">
-        <a href="#tab1" id="tab1-link" onclick="openPage3('depositz')">Deposits</a>
-        <a href="#tab2" id="tab2-link" onclick="openPage3('withdraw')">Withdrawals</a>
-        <a href="#tab3" id="tab3-link" onclick="openPage3('security')">Others</a>
+        <a href="#tab1" id="tab1-link" >Deposits</a>
+        <a href="#tab2" id="tab2-link" >Withdrawals</a>
+        <a href="#tab3" id="tab3-link" >Others</a>
         </div>
 
+
+        <div id="tab1"  style="display:none;">
+
+
+          <div class="depo-topbar">
+      
+            <div>
+              <label for="entries">Show entries:</label>
+              <select id="entries" name="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+      
+           
+      
+      
+              <input class="search" type="text" placeholder="search">
+      
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="table-header">
+            <p>Amount</p>
+            <p>Payment mode</p>
+            <p>Status</p>
+            <p>Date</p>
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="transaction-data">
+            <p>You havent made any transactions yet</p>
+          </div>
+      
+          <div class="slimline2"></div>
+      
+          <div class="entries-cont">
+            <p>Showing 0 to 0 of 0 entries</p>
+      
+            <div class="btns">
+      
+              <a href="">Previous</a>
+              <a href="">Next</a>
+      
+            </div>
+          </div>
+      
+      
+      
+      
+        </div>
+
+        <div id="tab2"  style="display:none;">
+
+          <h3>Withdraw</h3>
+
+          <div class="depo-topbar">
+      
+            <div>
+              <label for="entries">Show entries:</label>
+              <select id="entries" name="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+      
+           
+      
+      
+              <input class="search" type="text" placeholder="search">
+      
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="table-header">
+            <p>Amount requested</p>
+            <p>Charges</p>
+            <p>Receiving mode</p>
+            <p>Status</p>
+            <p>Date</p>
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="transaction-data">
+            <p>You havent made any transactions yet</p>
+          </div>
+      
+          <div class="slimline2"></div>
+      
+          <div class="entries-cont">
+            <p>Showing 0 to 0 of 0 entries</p>
+      
+            <div class="btns">
+      
+              <a href="">Previous</a>
+              <a href="">Next</a>
+      
+            </div>
+          </div>
+      
+      
+      
+      
+        </div>
+
+        <div id="tab3"  style="display:none;">
+
+          <h3>Others</h3>
+
+          <div class="depo-topbar">
+      
+            <div>
+              <label for="entries">Show entries:</label>
+              <select id="entries" name="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+      
+           
+      
+      
+              <input class="search" type="text" placeholder="search">
+      
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="table-header">
+            <p>Amount</p>
+            <p>Type</p>
+            <p>Narration</p>
+            <p>Date</p>
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="transaction-data">
+            <p>You havent made any transactions yet</p>
+          </div>
+      
+          <div class="slimline2"></div>
+      
+          <div class="entries-cont">
+            <p>Showing 0 to 0 of 0 entries</p>
+      
+            <div class="btns">
+      
+              <a href="">Previous</a>
+              <a href="">Next</a>
+      
+            </div>
+          </div>
+      
+      
+      
+      
+        </div>
       
 
   </div>
 
-  <div id="tab1" class="depositz" style="display:none;">
+  <div class="main"  id="refer" style="display:none;">
 
-
-    <div class="depo-topbar">
-
-      <div>
-        <label for="entries">Show entries:</label>
-        <select id="entries" name="entries">
-          <option value="10">10</option>
-          <option value="25">25</option>
-          <option value="50">50</option>
-          <option value="100">100</option>
-        </select>
-      </div>
-
-     
-
-
-        <input class="search" type="text" placeholder="search">
-
+    <div class="first-div">
+      <img onclick="toggleNav()" src="images/icons8-menu-50.png" alt="">
+      <h2>Referrals</h2>
     </div>
 
-    <div class="slimline"></div>
+   
+    <div class="ref-container">
+      <p>You can refer users by sharing your referral link</p>
 
-    <div class="table-header">
-      <p>Amount</p>
-      <p>Payment mode</p>
-      <p>Status</p>
-      <p>Date</p>
+      <div class="ref-box">
+        <p>bnbefyuefy78ewy78ewyfeiufyd7gy7dgdfhjd</p>
+        <div class="ref-btn">
+            <img src="images/icons8-copy-96.png" alt="">
+        </div>
     </div>
-
-    <div class="slimline"></div>
-
-    <div class="transaction-data">
-      <p>You havent made any transactions yet</p>
-    </div>
-
-    <div class="slimline2"></div>
-
-    <div class="entries-cont">
-      <p>Showing 0 to 0 of 0 entries</p>
-
-      <div class="btns">
-
-        <a href="">Previous</a>
-        <a href="">Next</a>
-
-      </div>
     </div>
 
 
 
+
+        <div id="tab1"  style="display:block;">
+
+          <h3>Your referrals</h3>
+
+          <div class="depo-topbar">
+      
+            <div>
+              <label for="entries">Show entries:</label>
+              <select id="entries" name="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+      
+           
+      
+      
+              <input class="search" type="text" placeholder="search">
+      
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="table-header">
+            <p>Client name</p>
+            <p>Ref level</p>
+            <p>Client status</p>
+            <p>Date</p>
+          </div>
+      
+          <div class="slimline"></div>
+      
+          <div class="transaction-data">
+            <p>You are yet to make any refrrals</p>
+          </div>
+      
+          <div class="slimline2"></div>
+      
+          <div class="entries-cont">
+            <p>Showing 0 to 0 of 0 entries</p>
+      
+            <div class="btns">
+      
+              <a href="">Previous</a>
+              <a href="">Next</a>
+      
+            </div>
+          </div>
+      
+      
+      
+      
+        </div>
+
+       
+      
 
   </div>
+
+
+ 
   <script>
       function toggleSidebar() {
           var sidebar = document.getElementById('sidebar');
@@ -973,11 +1172,6 @@ input:checked + .slider:before {
 
 
 
-
-
-
-
-
 <script>
 
   // Check if there is a stored value for the switch
@@ -992,15 +1186,7 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
 });
 
 
-  </script>
-
-  <script>
-
-    var sidebar = document.getElementById("sidebar");
-
-
-    </script>
-
+</script>
 
     
 <script>
@@ -1014,10 +1200,10 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
   }
 }
 
-  </script>
+</script>
 
 
-  <script>
+<script>
 
     document.getElementById('tab1').style.display = 'block';
 
@@ -1042,7 +1228,7 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
             document.getElementById('tab2').style.display = 'none';
             document.getElementById('tab3').style.display = 'block';
         });
-    </script>
+</script>
 
   
  
