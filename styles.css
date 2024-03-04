@@ -3484,6 +3484,16 @@ margin-top: 40px;
             color: #007bff;
         }
 
+        .terms-box{
+            color: #6d6d6d;
+            font-weight: lighter;
+            display:  flex;
+        }
+
+        .terms-box p{
+            font-size: 10px;
+            line-height: 12px;
+        }
 
         .switch-container a:hover{
             color: #fff;
