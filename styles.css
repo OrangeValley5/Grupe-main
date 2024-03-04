@@ -3493,9 +3493,11 @@ margin-top: 40px;
         .terms-box p{
             font-size: 10px;
             line-height: 12px;
+            width: 340px;
+            margin-right: 10px;
         }
 
-        .switch-container a:hover{
+        .switch-con2ainer a:hover{
             color: #fff;
             background-color: #007bff;
         }
@@ -4097,6 +4099,13 @@ margin-top: 40px;
                 color: #929292;
                 font-weight: lighter;
                 font-size: 14px;
+            }
+
+            .terms-box p{
+                font-size: 10px;
+                line-height: 12px;
+                width: 240px;
+                margin-right: 10px;
             }
         }
 
