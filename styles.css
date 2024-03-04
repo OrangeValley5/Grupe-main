@@ -3488,6 +3488,7 @@ margin-top: 40px;
             color: #6d6d6d;
             font-weight: lighter;
             display:  flex;
+            justify-content: space-between;
         }
 
         .terms-box p{
@@ -4104,7 +4105,7 @@ margin-top: 40px;
             .terms-box p{
                 font-size: 10px;
                 line-height: 12px;
-                width: 240px;
+                width: 260px;
                 margin-right: 10px;
             }
         }
