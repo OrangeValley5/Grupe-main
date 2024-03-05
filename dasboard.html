@@ -629,7 +629,8 @@ input:checked + .slider:before {
     </div>
     <div class="profile-switch" id="profile-switch">
 
-      <h4 id="non">Fund Wallet</h4>
+      <div id="tabs1" style="display:block;">
+        <h4 id="non">Fund Wallet</h4>
             <div class="new-cont">
             
             <h6>Enter amount</h6>
@@ -677,23 +678,67 @@ input:checked + .slider:before {
            
 
 
-            <a class="pay-btn" href="checkout.html"> Continue</a></button>
+            <a class="pay-btn" href="#tabs2" id="tabs1-link"> Continue</a></button>
 
             </div>
+      </div>
+
+      
       
 
       
   </div>
   
-  <div class="main" id="services" style="display:none;">
-    <h2>Services</h2>
-    <p>Explore our services</p>
+ 
+  <div id="tabs2"  style="display:none;" id="tabs2-link">
+    <p id="dee" class="cont-subtitle">You are to make a payment of $25 using
+      your selected payment method. Screenshot
+      and upload the proof of payment
+   </p>
+
+
+  <div class="pay-options">
+
+      <img src="images/btc.png" alt="">
+      <p>Bitcoin</p>
+  </div>
+
+  
+
+
+  <h6>Bitcoin Address</h6>
+
+  <div class="pay-box">
+      <p>bnbefyuefy78ewy78ewyfeiufyd7gy7dgdfhjd</p>
+      <div class="copy-btn">
+          <img src="images/icons8-copy-96.png" alt="">
+      </div>
+  </div>
+
+  <div class="bt-container">
+
+      <p id="bold">Network type</p>
+
+      <p>BTC</p>
+  </div>
+
+
+  <h6 class="pay-titles">Upload proof of payment</h6>
+
+  <div id="beet" class="bt-container">
+
+      <p>No file selected</p>
+      <p id="choose-file">Choose File</p>
+      
   </div>
   
-  <div class="main" id="contact" style="display:none;">
-    <h2>Contact</h2>
-    <p>Get in touch with us</p>
+
+
+  <a class="pay-btn" href="checkout.html"> Submit Payment</a></button>
+
   </div>
+  
+  
 
   </div>
   
@@ -1394,6 +1439,24 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
         });
 </script>
 
+<script>
+
+document.getElementById('tabs1').style.display = 'block';
+
+
+    document.getElementById('tabs1-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('tabs1').style.display = 'none';
+        document.getElementById('tabs2').style.display = 'block';
+    });
+
+    document.getElementById('tabs2-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('tabs1').style.display = 'none';
+        document.getElementById('tabs2').style.display = 'block';
+    });
+
+</script>
 
 <script>
     // Get the modal
