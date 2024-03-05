@@ -161,20 +161,60 @@ input:checked + .slider:before {
       </div>
   </div>
 
-    <div class="sidebar" id="sidebar">
+    <div class="sidebar" id="sidebar" data-aos="fade-up">
       <a href="javascript:void(0)" id="closer" class="closebtn" onclick="toggleNav()">&times;</a>
 
       <h2>Grupe</h2>
 
-      <a href="#" id="invinsible" class="activez" onclick="openPage('home'), toggleNav()">Dashboard</a>
-      <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()">User Profile</a>
-      <a href="#" class="menu-link" onclick="openPage('deposit'), toggleNav()">Deposit</a>
-      <a href="#" class="menu-link" onclick="openPage('subscribe'), toggleNav()">Subscribe to plan</a>
-      <a href="#" class="menu-link" onclick="openModal(), toggleNav()">My trades</a>
-      <a href="#" class="menu-link" onclick="openPage('transact'), toggleNav()">Transaction History</a>
-      <a href="#" class="menu-link" onclick="openPage('refer'), toggleNav()">Refer user</a>
-      <a href="#" class="menu-link" onclick="openPage('profit'), toggleNav()">Profit History</a>
-      <a href="#" class="menu-link" onclick="openPage('home'), toggleNav()">Logout</a>
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-home-100.png" alt="">
+        <a href="#" id="invinsible" class="activ" onclick="openPage('home'), toggleNav()">Dashboard</a>
+      </div>
+
+      <div class="iconz-div">
+
+        <img id="togglePassword" src="images/icons8-user-90.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('about'), toggleNav()"> User Profile </a>
+
+      </div>
+
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-donation-90.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('deposit'), toggleNav()">Deposit</a>
+
+      </div>
+
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-paperwork-64.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('subscribe'), toggleNav()">Subscribe to plan</a>
+      </div>
+      
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-exchange-bitcoin-100-3.png" alt="">
+        <a href="#" class="menu-link" onclick="openModal(), toggleNav()">My trades</a>
+
+      </div>
+
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-dollar-bitcoin-exchange-100.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('transact'), toggleNav()">Transaction History</a>
+
+      </div>
+
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-team-90.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('refer'), toggleNav()">Refer user</a>
+      </div>
+
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-exchange-dollar-100.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('profit'), toggleNav()">Profit History</a>
+      </div>
+
+      <div class="iconz-div">
+        <img id="togglePassword" src="images/icons8-logout-64.png" alt="">
+        <a href="#" class="menu-link" onclick="openPage('home'), toggleNav()">Logout</a>
+      </div>
   </div>
   
   <div class="content">
@@ -225,16 +265,18 @@ input:checked + .slider:before {
     </div>
     <!-- TradingView Widget END -->
 
-    <div class="amount-container">
+    <div class="amount-container" data-aos="fade-up">
 
       <div class="amount-children">
         <div class="amount-text">
           <h6> Account Balance</h6>
 
           <h5>$6.00</h5>
+
+          
         </div>
 
-       
+        <a onclick="openModal()" id="withdraw-btn" href="#">Withdraw</a>
 
       </div>
 
@@ -354,13 +396,13 @@ input:checked + .slider:before {
         <div class="input-container">
 
           <div class="input-sub">
-            <p>Fullname</p>
-            <input type="text">
+            <p>Home Address</p>
+            <input type="text" placeholder="Optional">
           </div>
 
           <div class="input-sub">
-            <p>Fullname</p>
-            <input type="text">
+            <p>Social media handle</p>
+            <input type="text" placeholder="Optional">
           </div>
         </div>
 
@@ -560,7 +602,7 @@ input:checked + .slider:before {
     </div>
     <div class="profile-switch" id="profile-switch">
 
-      <h4>Fund Wallet</h4>
+      <h4 id="non">Fund Wallet</h4>
             <div class="new-cont">
             
             <h6>Enter amount</h6>
@@ -577,31 +619,31 @@ input:checked + .slider:before {
 
                 <img src="images/btc.png" alt="">
                 <p>Bitcoin</p>
-            </div>
+             </div>
 
-            <div class="pay-options">
+             <div class="pay-options">
 
                 <img src="images/eth.png" alt="">
                 <p>Ethereum</p>
-            </div>
+             </div>
 
-            <div class="pay-options">
+             <div class="pay-options">
 
                 <img src="images/capp.png" alt="">
                 <p>Cashapp</p>
-            </div>
+             </div>
 
-            <div class="pay-options">
+             <div class="pay-options">
 
                 <img src="images/apple.png" alt="">
                 <p>Apple pay</p>
-            </div>
+             </div>
 
-            <div class="pay-options">
+             <div class="pay-options">
 
                 <img src="images/gpay.png" alt="">
                 <p>Google pay</p>
-            </div>
+             </div>
 
             </div>
 
@@ -961,6 +1003,13 @@ input:checked + .slider:before {
           </div>
       
           <div class="slimline"></div>
+
+          <div class="table-header">
+            <p style="color: #22e27c;">$6</p>
+            <p>Bonus</p>
+            <p></p>
+            <p>12/12/24</p>
+          </div>
       
           <div class="transaction-data">
             <p>You havent made any transactions yet</p>
@@ -1343,8 +1392,7 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
     // Close the modal when the user clicks anywhere outside of it
    
 </script>
-  
- 
+
 
 </body>
 </html>

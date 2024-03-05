@@ -2729,8 +2729,8 @@ background-color: #191e23;
     padding: 20px;
     border-radius: 14px;
     color: black;
-    width: 90%;
-    height: 90%; /* Could be more or less, depending on screen size */
+    width: 80%;
+    height: 80%; /* Could be more or less, depending on screen size */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2818,6 +2818,10 @@ background-color: #191e23;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
+}
+
+.pay-options:hover{
+    background-color: #b7daff;
 }
 
 .pay-options p{
@@ -3383,17 +3387,11 @@ margin-top: 40px;
         .sidebar a {
             display: block;
             color: #fff;
-            padding: 10px 8px;
             text-decoration: none;
-            margin-top: 20px;
+            margin-left: 8px;
         }
     
-        /* Change color on hover */
-        .sidebar a:hover {
-            background-color: #ffffff;
-            color: #007bff;
-            border-radius: 8px;
-        }
+     
     
         /* Style the active link */
         .sidebar .activez {
@@ -3583,12 +3581,20 @@ margin-top: 40px;
             height: 24px;
             margin-left: 0px;
             margin-right: 10px;
+            display: none;
 
         }
 
 
         #closer{
             font-size: 28px;
+            background-color: #85c0ff;
+            display: inline-block;
+            margin-left: 0px;
+            border-radius: 50px;
+            padding: 1px 10px;
+            margin-bottom: 10px;
+            align-self: flex-end;
         }
 
 
@@ -3597,6 +3603,12 @@ margin-top: 40px;
             margin-top: 20px;
             gap: 4px;
             
+            
+        }
+
+        #non{
+            margin-left: 10px;
+            margin-bottom: 30px;
         }
 
 
@@ -3872,9 +3884,77 @@ margin-top: 40px;
         .modal25open .modal-content5 {
             margin-left: 0; /* Slide in from the left when open */
         }
+
+        #dash-icons{
+            color: #fff;
+            
+        }
+
+        .iconz-div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 10px;
+            margin-top: 25px;
+            padding: 10px 4px;
+            
+        }
+
+        .iconz-div:hover{
+            background-color: #77b9ff;
+        }
+
+       
+
+        .menu-link{
+           
+            display: inline-block; /* Make anchor element a block to set a height */
+            line-height: 1 /* Reset line height to prevent extra spacing */
+        }
+
+        #withdraw-btn{
+            padding: 10px 10px;
+            background-color: #469fff;
+            border-radius: 8px;
+            align-self: flex-end;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 8px;
+        }
+
+        .iconz-div img{
+            width: 20px;
+            height: 20px;
+        }
         
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
+
+
+            .first-div img{
+                width: 24px;
+                height: 24px;
+                margin-left: 0px;
+                margin-right: 10px;
+                display: block;
+    
+            }
+
+            #dash-icons{
+                width: 30px;
+                height: 30px;
+                
+            }
+
+            .iconz-div img{
+                width: 16px;
+                height: 16px;
+            }
+
+            .iconz-div a{
+                font-size: 14px;
+            }
             
             .pay-main{
                 display: flex;
