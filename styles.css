@@ -348,7 +348,7 @@ nav a{
     height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 40px;
     text-align: start;
     font-size: 14px;
@@ -358,7 +358,7 @@ nav a{
 }
 
 .trust2 h4{
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bolder;
     font-family: Bricolage Grotesque;
 
@@ -366,7 +366,10 @@ nav a{
 
 .trust2 p{
     margin-top: 14px;
+    font-size: 20px;
+    font-weight: lighter;
     font-family: Bricolage Grotesque;
+    margin-left: 10px;
 }
 
 
@@ -394,7 +397,7 @@ nav a{
     font-size: 14px;
     background-color: #f4f4f4;
     border-radius: 8px;
-    padding: 20px 14px;
+    padding: 20px 30px;
 }
 
 .trust3 img{
@@ -410,14 +413,16 @@ nav a{
 }
 
 .trust3 h4{
-    font-size: 20px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 32px;
     font-family: Bricolage Grotesque ;
 }
 
 .trust3 p {
     margin-top: 14px;
+    font-size: 18px;
+    font-family: Bricolage  Grotesque;
+    font-weight: lighter;
 }
 
 .trust4{
@@ -987,8 +992,9 @@ margin-bottom: 20px;
 }
 
 .section3a h3{
-    font-size: 30px;
+    font-size: 50px;
     font-family: Bricolage Grotesque;
+    text-align: center;
 }
 
 
@@ -2532,8 +2538,14 @@ background-color: #191e23;
 .profile-header{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     
+}
+
+.profile-header h5{
+    font-size: 32px;
+    color: #868686;
+    font-family: Bricolage Grotesque;
 }
 
 .profile-header2{
@@ -3934,11 +3946,22 @@ margin-top: 40px;
             margin-right: 50px;
         }
 
+
+        .features-cont{
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            gap: 20px;
+        }
+
        
         
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
 
+            .features-cont{
+                display: flex;
+                flex-direction: column;
+            }
 
             #dee{
                 font-size: 12px;
@@ -4218,6 +4241,43 @@ margin-top: 40px;
 
             .trust span{
                 text-align: start;
+            }
+
+
+            .profile-header{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                
+            }
+            
+            .profile-header h5{
+                font-size: 32px;
+                color: #868686;
+                font-family: Bricolage Grotesque;
+            }
+
+            .section3a h3{
+                font-size: 30px;
+                font-family: Bricolage Grotesque;
+                text-align: start;
+            }
+
+            
+         
+            
+            .trust2 p{
+                font-size: 14px;
+                font-weight: lighter;
+                margin-left: 10px;
+            }
+
+            
+            
+            .trust3 p{
+                text-align: start;
+                font-size: 14px;
+                font-weight: lighter;
             }
         }
 
