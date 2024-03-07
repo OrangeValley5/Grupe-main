@@ -4011,15 +4011,66 @@ margin-top: 40px;
             margin-bottom: 30px;
         }
         
+        .section3a4 h4{
+            font-size: 40px;
+            color: white;
+        }
+
+        .section3a4-cont{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .section3a5 h3{
+            font-size: 40px;
+        }
+
+        .section3a5 h5{
+            font-size: 20px;
+        }
+
+
+        /* Styles for the modal */
+         .earn-modal {
+             display: none; /* Initially hide the modal */
+             position: fixed;
+             top: 50%;
+             left: 40%;
+             transform: translate(-50%, -50%);
+             color: #fff;
+             padding: 10px;
+             border: 1px solid #fff;
+             border-radius: 5px;
+             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+             opacity: 0;
+             transition: opacity 0.5s;
+             background-color: #007bff;
+        }
+  
+
+
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
+
+
+            .earn-modal p{
+                font-size: 14px;
+                font-weight: lighter;
+           }
+
+           
             .onboard-items{
                 display: flex;
                 flex-direction: column;
                 padding: 15px;
                 gap: 40px;
-                
-    
+            }
+
+            .section3a4-cont{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
             }
 
             .trusted-cont{

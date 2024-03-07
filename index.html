@@ -737,55 +737,59 @@
                 
             </div>
 
-            <div class="trust2e">
+            <div class="section3a4-cont">
 
-                <div class="startup4">
+                <div class="trust2e">
+
+                    <div class="startup4">
+                        <p>
+                            Grupe Blog
+                        </p>
+                    </div>
+    
+                    <h4>Get the latest company news and
+                        industry updates
+                     </h4>
+    
                     <p>
-                        Grupe Blog
-                    </p>
+                        Coming soon 
+                       </p>
+    
+                       <div class="i-div">
+                        <img src="images/megaphone.png" alt="">
+                       </div>
+    
+    
+    
                 </div>
-
-                <h4>Get the latest company news and
-                    industry updates
-                 </h4>
-
-                <p>
-                    Coming soon 
-                   </p>
-
-                   <div class="i-div">
-                    <img src="images/megaphone.png" alt="">
-                   </div>
-
-
+    
+              
+    
+                <div class="trust2d">
+    
+                    <div class="startup5">
+                        <p>
+                            Grupe Academy
+                        </p>
+                    </div>
+    
+                    <h4>Learn all abut investing, bitcion and blockchain
+                     </h4>
+    
+                    <p>
+                        Coming soon
+                       </p>
+    
+                       <div class="i-div">
+                        <img src="images/grad.png" alt="">
+                       </div>
+    
+    
+                </div>
 
             </div>
 
-          
-
-            <div class="trust2d">
-
-                <div class="startup5">
-                    <p>
-                        Grupe Academy
-                    </p>
-                </div>
-
-                <h4>Learn all abut investing, bitcion and blockchain
-                 </h4>
-
-                <p>
-                    Coming soon
-                   </p>
-
-                   
-
-                   <div class="i-div">
-                    <img src="images/grad.png" alt="">
-                   </div>
-
-
-            </div>
+            
 
             <div class="trust4-btn">
                 
@@ -944,6 +948,10 @@
 
   <!-- TradingView Widget END -->
         
+  <div class="earn-modal" id="earnModal" onclick="stopRefresh()">
+    <h4>Earning</h4>
+    <p id="earnText"></p>
+  </div>
         
        
 
@@ -981,6 +989,7 @@
         </footer>
 
     </div>
+
     
 
     <script>
@@ -991,6 +1000,65 @@
             I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
           },false)
         })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+      </script>
+
+      <script>
+        // Arrays of names, amounts, and countries
+const names = ["Chris", "Emma", "John", "Linda", "Michael", "Sarah"];
+const amounts = ["$100", "$200", "$300", "$400", "$500", "$600"];
+const countries = ["Nigeria", "USA", "Canada", "UK", "Australia", "Brazil"];
+
+// Function to generate a random number between min and max
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to generate random content and display in modal
+function generateRandomContent() {
+  const name = names[getRandomNumber(0, names.length - 1)];
+  const amount = amounts[getRandomNumber(0, amounts.length - 1)];
+  const country = countries[getRandomNumber(0, countries.length - 1)];
+  document.getElementById("earnText").innerText = `${name} from ${country} just earned ${amount}`;
+}
+
+// Show the modal with a fade effect
+function showEarnModal() {
+  const earnModal = document.getElementById("earnModal");
+  earnModal.style.display = "block";
+  earnModal.addEventListener("click", stopRefresh);
+  setTimeout(() => {
+    earnModal.style.opacity = 1;
+  }, 100);
+}
+
+// Hide the modal with a fade effect
+function hideEarnModal() {
+  const earnModal = document.getElementById("earnModal");
+  earnModal.style.opacity = 0;
+  setTimeout(() => {
+    earnModal.style.display = "none";
+    generateRandomContent();
+    showAndRefreshModal();
+  }, 500);
+}
+
+function stopRefresh() {
+  const earnModal = document.getElementById("earnModal");
+  earnModal.removeEventListener("click", stopRefresh);
+  clearTimeout(timeout);
+}
+
+// Show the modal and refresh every 5 seconds
+function showAndRefreshModal() {
+  showEarnModal();
+  setTimeout(() => {
+    hideEarnModal();
+  }, 5000);
+}
+
+// Show the modal when the page loads
+window.addEventListener("load", showAndRefreshModal);
+
       </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js"></script>
