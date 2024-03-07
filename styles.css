@@ -4179,10 +4179,46 @@ margin-top: 40px;
             transform: translateY(-50%) rotate(180deg); /* Rotate the arrow icon 180 degrees */
           }
           
-          
-
-
+        
          /************** FAQS END ************/
+
+
+         /************** TERMS ************/
+
+
+         .terms-header{
+            padding: 10px 4rem;
+         }
+
+         .terms-header h3{
+            margin-bottom: 40px;
+            font-size: 45px;
+            font-family: Bricolage Grotesque;
+         }
+
+         .terms-header p{
+            color: #757575;
+            font-family: Bricolage Grotesque;
+            margin-bottom: 10px;
+            font-weight: lighter;
+         }
+
+         .terms-cont{
+            padding: 10px 4rem;
+        
+         }
+
+         .terms-cont p{
+            font-weight: lighter;
+            line-height: 30px;
+         }
+
+         .terms-cont li{
+            font-weight: lighter;
+            margin-top: 20px;
+         }
+
+          /************** TERMS END ************/
 
 
           /* Media query for mobile */

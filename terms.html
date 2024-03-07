@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Grupe</title>
+</head>
+<body>
+    <nav id="nav2">
+        <a href="index.html"><h4 id="logo">Grupe </h4></a>
+
+        <ul>
+            <li><a href="login.html" class="active">Sign In</a></li>
+        </ul>
+    </nav>
+    
+    <div class="terms-header">
+        <h3>Frequently asked questions(Faqs)</h3>
+        <p>This is an overview on the  
+            most frequently asked questions by our users and 
+             and the best and detailed answers to your questions.</p>
+    </div>
+
+
+     <div class="terms-cont">
+
+        <p>
+            The Grupe website/platform (www.grupe.com) is available in English Language. The English version is the original version and the only one binding on Grupe; it shall prevail on any other version in case of discrepancy. Grupe is not responsible for any erroneous, inadequate, or misleading translations from the original version into other languages unless communicated to users. Grupe allows access to its webpage and users related services by any individual or corporate entity (herein after referred to as the Investor/Client) according to the procedure and on the terms and conditions described in this Agreement. The Agreement becomes effective as of the date the Investor opened an investment account and transferred funds to the Company’s account(s) to ensure minimum investment deposit. In the Agreement any reference to an individual person includes corporate entities, unincorporated associations, partnerships and individuals.Headings and notes in the Agreement are for reference only and shall not affect the contents and interpretation of the Agreement.
+        </p>
+
+        
+          
+
+     </div>
+
+     <div class="terms-cont">
+
+        <h3>
+            Investors agree that
+        </h3>
+
+        <ul>
+            <li>
+                Any actions/error committed by an investor which destabilize the Company’s business or performance of the Company’s services, equipment, or software may result in the Company’s refusal (on the basis of private law) of servicing the Investor’s current investment/trading account and cancellation of all investment orders, with full refund of the remaining deposit. Grupecoin would notify the Investor about the reasons for the above decision. Grupe also may reject such Investor’s new registration in the future.
+            </li>
+
+            <li>
+                Individuals below the age of 18 are not allowed to participate in financial trading, therefore can not use the services of Grupe. Information provided to the Grupe are true and correct.
+            </li>
+
+            <li>
+                He or she shall notify Grupe about any changes on information uploaded. The e-mail address submitted is not used by anyone. Any and all notices, requests, complaints, and information received from this address are considered as sent by the Investor.
+
+            </li>
+
+            <li>
+                Company may request from Investor a confirmation of accuracy of the personal account data for a due diligence and in the event of a withdrawal request. Company may request an authorized copy of the Investor’s ID and the document proving his place of residence. Inability to provide requested documents may result in the Company’s refusal (on the basis of private law) of servicing the investor’s current needs and cancellation of all trading orders, with full refund of the remaining deposit. Grupe must notify the Investor about the reasons for the above decision
+
+            </li>
+
+            <li>
+                In case of double registration of the same Client, Grupe has the right to cancel duplicated registrations, cancel opened positions and withdrawal requests. All duplicated accounts will be frozen for investigation purposes.
+            </li>
+        </ul>
+
+     </div>
+
+
+     
+
+
+
+<footer class="prev-foot">
+    <hr />
+    <div class="subber">
+        <p>&copy; 2020 grupe</p>
+        <a href="#"><p>Privacy policy</p></a>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+questions.forEach((question) => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('actived');
+    const icon = question.querySelector('i');
+    icon.classList.toggle('rotate'); // Toggle the rotate class on the icon
+  });
+});
+
+    </script>
+</body>
+</html>
