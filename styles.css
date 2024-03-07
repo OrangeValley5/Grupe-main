@@ -229,7 +229,7 @@ nav a{
 
 .price-holder1{
 
-    width: 150px;
+    width: 170px;
     height: 60px;
     margin-top: 8px;
     background-color: rgba(255, 255, 255, 0.5); /* Background color with 50% opacity */
@@ -279,6 +279,7 @@ nav a{
 
 #green{
     color: #00b03b;
+    font-size: 12px;
 }
 
 .text-holder1{
@@ -4044,8 +4045,8 @@ margin-top: 40px;
          .earn-modal {
              display: none; /* Initially hide the modal */
              position: fixed;
-             top: 50%;
-             left: 40%;
+             top: 80%;
+             left: 10%;
              transform: translate(-50%, -50%);
              color: #fff;
              padding: 10px;
@@ -4064,7 +4065,7 @@ margin-top: 40px;
         }
 
         .earn-modal h4{
-            font-size: 14px;
+            font-size: 12px;
             font-family: Bricolage Grotesque;
 
         }
@@ -4224,6 +4225,7 @@ margin-top: 40px;
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
 
+
             .terms-cont{
                 padding: 10px 2rem;
             
@@ -4278,9 +4280,17 @@ margin-top: 40px;
             }
 
             .earn-modal p{
-                font-size: 14px;
+                font-size: 10px;
                 font-weight: lighter;
            }
+
+           .earn-modal {
+            
+            top: 80%;
+            left: 30%;
+            
+       }
+ 
 
            
             .onboard-items{
