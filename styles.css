@@ -4099,7 +4099,90 @@ margin-top: 40px;
             font-size: 45px;
         }
 
+         /************** FAQS ************/
 
+         .faq-header{
+            padding: 10px 4rem;
+         }
+
+         .faq-header h3{
+            margin-bottom: 10px;
+            font-size: 45px;
+            font-family: Bricolage Grotesque;
+         }
+
+         .faq-header p{
+            color: #757575;
+            font-family: Bricolage Grotesque;
+            margin-bottom: 40px;
+            font-weight: lighter;
+         }
+         .faq span{
+            font-weight: bolder;
+            font-family: Bricolage Grotesque;
+            font-size: 20px;
+         }
+         .faq-cont{
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            padding: 10px 4rem;
+         }
+
+         .faq {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+          
+          .question {
+            padding: 14px;
+            cursor: pointer;
+            border: 1px solid #b7b7b7;
+            border-radius: 8px;
+            position: relative;
+          }
+          
+          .answer {
+            display: none;
+            padding: 20px;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            margin-top: 10px;
+            background-color: #000;
+            font-family: Bricolage Grotesque;
+            z-index: 1000;
+            color: white;
+            font-weight: lighter;
+          }
+          
+          .actived .answer {
+            display: block;
+          }
+          
+          .fa {
+            color: #8a8a8a;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            font-weight: lighter;
+            font-size: 12px;
+            transform: translateY(-50%);
+            transition: transform 0.3s; /* Add a transition for the transform property */
+          }
+          
+          .rotate {
+            transform: translateY(-50%) rotate(180deg); /* Rotate the arrow icon 180 degrees */
+          }
+          
+          
+
+
+         /************** FAQS END ************/
 
 
           /* Media query for mobile */
