@@ -80,6 +80,7 @@ nav a{
 
 .section1{
     width: 100%;
+    height: 100vh;
     background-color: #000000;
     padding: 50px 6rem;
     color: white;
@@ -99,7 +100,8 @@ nav a{
 }
 
 .double-container{
-    height: 250px;
+    height: 100%;
+    background-color: #007bff;
     width: 100%;
     position: relative;
 }
@@ -107,6 +109,7 @@ nav a{
 .fone-container{
         width: 100%;
         position: absolute;
+        height: 100%;
         z-index: 0; /* Ensure it's behind the float-container */
         top: 50%; /* Start at the middle of the container */
         left: 50%; /* Start at the middle of the container */
@@ -138,10 +141,8 @@ nav a{
 }
 
 .tested{
-
-    height: 330px;
-    width: 330px;
-    
+    height: 500px;
+    width: 500px; 
 }
 
 .tested2{
@@ -315,6 +316,7 @@ nav a{
 .col-container{
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .follow{
@@ -421,6 +423,7 @@ nav a{
 .trust3 p {
     margin-top: 14px;
     font-size: 18px;
+    width: 100%;
     font-family: Bricolage  Grotesque;
     font-weight: lighter;
 }
@@ -442,13 +445,13 @@ nav a{
 .trust2b {
     margin-top: 20px;
     background-color: #fff;
-}
-
-.trust2b{
-    margin-top: 14px;
     border-radius: 8px;
     padding: 20px 12px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
+
+
 
 .trust2b h3{
     font-size: 30px;
@@ -707,7 +710,6 @@ nav a{
 .onboard{
     width: 100%;
     height: auto;
-    margin-top: 40px;
 }
 
 .onboard h3{
@@ -3939,6 +3941,7 @@ margin-top: 40px;
             height: 20px;
         }
 
+        
 
         #tabs2{
             height: 100%;
@@ -3953,10 +3956,92 @@ margin-top: 40px;
             gap: 20px;
         }
 
+        .section3a2 h3{
+            font-size: 52px;
+        }
+
+
+        .ending-p{
+            text-align: center;
+            margin-top: 20px;
+            color: #646464;
+            font-weight: lighter;
+            font-size: 12px;
+        }
+
+        .trusted-cont{
+            display: flex;
+            gap: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
        
+        #fsize{
+            font-size: 42px;
+        }
+
+        .section3a3 h3{
+            font-size: 52px;
+        }
+
+        .section3a3 h4{
+            font-size: 32px;
+            margin-top: 8px;
+        }
+
+        .onboard-items{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 2px 40px;
+
+        }
+
+        .section3a33 h3{
+            font-size: 52px;
+            margin-bottom: 30px;
+        }
+
+        .section3a4 h3{
+            font-size: 52px;
+            margin-bottom: 30px;
+        }
         
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
+            .onboard-items{
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                gap: 40px;
+                
+    
+            }
+
+            .trusted-cont{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+    
+            }
+
+            .section3a33 h3{
+                font-size: 32px;
+            }
+
+            .section3a3 h3{
+                font-size: 32px;
+            }
+
+              .section3a2 h3{
+                 font-size: 32px;
+            }
 
             .features-cont{
                 display: flex;
@@ -4279,6 +4364,15 @@ margin-top: 40px;
                 font-size: 14px;
                 font-weight: lighter;
             }
+
+
+            .tested{
+                height: 330px;
+                width: 330px; 
+}
         }
+
+
+   
 
    
