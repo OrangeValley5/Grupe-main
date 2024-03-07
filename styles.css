@@ -28,9 +28,14 @@ nav{
     align-items: center;
     gap: 2rem;
     padding: 4rem 4rem;
+    font-family: Bricolage Grotesque;
 }
 nav span{
     color: #000000;
+}
+
+.logo{
+    font-size: 24px;
 }
 
 nav ul{
@@ -97,6 +102,8 @@ nav a{
 
 .section1 p{
     margin-top: 2rem;
+    font-family: Bricolage Grotesque;
+
 }
 
 .double-container{
@@ -347,7 +354,7 @@ nav a{
 
 .trust2{
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1041,7 +1048,8 @@ margin-bottom: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     margin-top: 20px;
 }
 
@@ -1218,7 +1226,7 @@ margin-bottom: 20px;
 }
 
 .footer-item p{
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 20px;
 }
 
@@ -2545,7 +2553,7 @@ background-color: #191e23;
 }
 
 .profile-header h5{
-    font-size: 32px;
+    font-size: 28px;
     color: #868686;
     font-family: Bricolage Grotesque;
 }
@@ -4048,11 +4056,69 @@ margin-top: 40px;
              background-color: #007bff;
         }
   
+        .earn-modal p{
+            font-size: 12px;
+            font-weight: lighter;
+            font-family: Bricolage Grotesque;
+        }
+
+        .earn-modal h4{
+            font-size: 14px;
+            font-family: Bricolage Grotesque;
+
+        }
+
+        #typed-text{
+            font-family: Bricolage Grotesque;
+
+        }
+
+        .section3a6 h3{
+            font-size: 52px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+
+        .section3a6 h4{
+            font-size: 25px;
+            
+        }
+
+        .section3a6 a{
+            font-size: 14px;
+            color: #fff;
+            border-radius: 4px;
+            background-color: #007bff;
+            text-decoration: none;
+            margin-top: 30px;
+            
+        }
+        .section3a7 h3{
+            font-size: 45px;
+        }
+
+
 
 
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
 
+            .section3a7 h3{
+                font-size: 30px;
+            }
+    
+            .boxer{
+                
+                justify-content: space-between;
+                gap: 50px;
+                
+            }
+
+            .section3a6 h3{
+                font-size: 32px;
+                
+            }
 
             .earn-modal p{
                 font-size: 14px;
@@ -4420,10 +4486,14 @@ margin-top: 40px;
             .tested{
                 height: 330px;
                 width: 330px; 
-}
-        }
+
+              }
+
+              .footer-item p{
+                font-size: 12px;
+              }
 
 
-   
+            }
 
    
