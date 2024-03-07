@@ -1003,21 +1003,18 @@
       </script>
 
       <script>
-        // Arrays of names, amounts, and countries
-const names = ["Chris", "Emma", "John", "Linda", "Michael", "Sarah"];
-const amounts = ["$100", "$200", "$300", "$400", "$500", "$600"];
-const countries = ["Nigeria", "USA", "Canada", "UK", "Australia", "Brazil"];
-
-// Function to generate a random number between min and max
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+        let timeout;
 
 // Function to generate random content and display in modal
 function generateRandomContent() {
-  const name = names[getRandomNumber(0, names.length - 1)];
-  const amount = amounts[getRandomNumber(0, amounts.length - 1)];
-  const country = countries[getRandomNumber(0, countries.length - 1)];
+  const names = ["Chris", "Emma", "John", "Linda", "Michael", "Sarah"];
+  const amounts = ["$100", "$200", "$300", "$400", "$500", "$600"];
+  const countries = ["Nigeria", "USA", "Canada", "UK", "Australia", "Brazil"];
+  
+  const name = names[Math.floor(Math.random() * names.length)];
+  const amount = amounts[Math.floor(Math.random() * amounts.length)];
+  const country = countries[Math.floor(Math.random() * countries.length)];
+
   document.getElementById("earnText").innerText = `${name} from ${country} just earned ${amount}`;
 }
 
@@ -1025,7 +1022,7 @@ function generateRandomContent() {
 function showEarnModal() {
   const earnModal = document.getElementById("earnModal");
   earnModal.style.display = "block";
-  earnModal.addEventListener("click", stopRefresh);
+  earnModal.addEventListener("click", stopRefresh); // Add event listener to stop refresh
   setTimeout(() => {
     earnModal.style.opacity = 1;
   }, 100);
@@ -1042,16 +1039,25 @@ function hideEarnModal() {
   }, 500);
 }
 
+function hideEarnModal2() {
+  const earnModal = document.getElementById("earnModal");
+  earnModal.style.opacity = 0;
+  earnModal.style.display = "none";
+ 
+}
+
+// Stop the automatic refresh and hide when modal is clicked
 function stopRefresh() {
   const earnModal = document.getElementById("earnModal");
-  earnModal.removeEventListener("click", stopRefresh);
-  clearTimeout(timeout);
+  earnModal.removeEventListener("click", stopRefresh); // Remove event listener
+  clearTimeout(timeout); // Clear the timeout
+  hideEarnModal2();
 }
 
 // Show the modal and refresh every 5 seconds
 function showAndRefreshModal() {
   showEarnModal();
-  setTimeout(() => {
+  timeout = setTimeout(() => {
     hideEarnModal();
   }, 5000);
 }
