@@ -4224,6 +4224,11 @@ margin-top: 40px;
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
 
+            .terms-cont{
+                padding: 10px 2rem;
+            
+             }
+
             .faq-cont{
                 display: flex;
                 flex-direction: column;
