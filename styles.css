@@ -4229,6 +4229,13 @@ margin-top: 40px;
             
              }
 
+             .terms-header{
+                padding: 10px 2rem;
+            
+             }
+
+
+
             .faq-cont{
                 display: flex;
                 flex-direction: column;
