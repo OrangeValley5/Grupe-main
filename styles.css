@@ -1857,12 +1857,15 @@ color: #000;
     font-size: 10px;
 }
 
+.prev-container{
+    padding: 50px 4rem;
+    font-family: Bricolage Grotesque;
+}
+
 
 
 @media (max-width: 1200px){
-    .prev-container{
-        padding: 50px 0.5rem;
-    }
+    
 
     .profile-info h4{
         font-size: large;
@@ -2214,7 +2217,7 @@ color: #000;
     align-items: center;
     justify-content: center;
     /*filter: blur(10px);  Add the blur effect */
-    padding: 5rem 5rem;
+    padding: 1rem 1rem;
 }
 
 .section h1{
@@ -2255,6 +2258,7 @@ color: #000;
     margin-top: 40px;
     font-size: 18px;
     margin-bottom: 30px;
+    font-weight: lighter;
 }
 
 .login-card h5{
@@ -2348,6 +2352,7 @@ color: #000;
     border: 1px solid #007bff;
     padding: 15px 0;
     font-size: 12px;
+    margin-bottom: 50px;
   }
   
   .forgot{
@@ -4795,6 +4800,10 @@ margin-top: 40px;
                 font-size: 18px;
                 line-height: 25px;
                 font-weight: lighter;
+            }
+
+            #nav2 a{
+                display: block;
             }
 
             }
