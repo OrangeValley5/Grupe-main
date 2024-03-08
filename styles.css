@@ -482,6 +482,7 @@ nav a{
     margin-top: 14px;
     border-radius: 8px;
     padding: 20px 12px;
+    width: 100%;
 }
 
 .trust2c h3{
@@ -500,6 +501,7 @@ nav a{
 .trust2d {
     margin-top: 20px;
     background-color: #007bff;
+    width: 100%;
 }
 
 .trust2d{
@@ -670,13 +672,13 @@ nav a{
 .startup2{
     background-color: #3b3b3b;
     border-radius: 4px;
-    width: 130px;
+    width: 145px;
 }
 
 .startup2 p{
     color: #fff;
     font-size: 16px;
-    padding-left: 8px;
+
 }
 
 .startup3{
@@ -930,6 +932,12 @@ color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;    
+}
+
+.section3-div p{
+    text-align: center;
+    font-size: 18px;
+    color: #858585;
 }
 
 .section3-div p{
@@ -4750,6 +4758,44 @@ margin-top: 40px;
               .trust3{
                 padding: 20px 20px;
               }
+
+              .section3a2{
+                padding: 20px 0.8rem;
+              }
+
+              .trust2b{
+                margin-left: 14px;
+                margin-right: 14px;
+              }
+              
+              .section3-div p{
+                text-align: start;
+                font-size: 14px;
+                color: #858585;
+            }
+
+            .section3-div h4{
+                font-size: 25px;
+            }
+
+            .section3{
+                padding: 10px 1rem;
+            }
+
+            #fsize{
+                font-size: 32px;
+            }
+            .trust2c p{
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: lighter;
+            }
+
+            .trust2d p{
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: lighter;
+            }
 
             }
 
