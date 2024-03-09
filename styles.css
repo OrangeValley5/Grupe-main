@@ -3339,7 +3339,7 @@ align-items: center;
         .spot-div2{
             background-color: black;
             font-family: Bricolage Grotesque;
-            padding: 20px;
+            padding: 20px 3rem;
         }
 
         .spot-div2 h3{
@@ -3368,6 +3368,9 @@ align-items: center;
         }
         .onboard-spot{
             margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .onboard-spot h3{
@@ -3375,9 +3378,14 @@ align-items: center;
             font-size: 24px;
         }
 
+        .onboard-spot p{
+            text-align: center;
+            padding: 8px;
+        }
+
         .spot-txt{
             color: #fff;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: lighter;
         }
 
@@ -4385,8 +4393,61 @@ align-items: center;
             margin-top: 10px;
           }
 
+          .invest-div{
+            padding: 10px 3rem;
+          }
+
+          .how-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .how-div h2{
+            font-size: 45px;
+            margin-bottom: 20px;
+          }
+
+          .board-cont{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+          }
+
+         
+
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
+
+            .board-cont{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                margin-top: 10px;
+              }
+
+            .safe-txt{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .safe-txt p{
+                text-align: center;
+            }
+
+            .safe-txt h2{
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .invest-div{
+                padding: 10px 1rem;
+              }
 
             .safe-header{
                 padding-left: 0px;
@@ -4991,6 +5052,29 @@ align-items: center;
                     margin-right: 20px;
                 }
                 
+                .onboard-spot{
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+
+                .onboard-spot p{
+                    text-align: start;
+                    padding: 0px;
+                }
+
+                .how-div{
+                    align-items: start;
+                }
+
+                .how-div h2{
+                    font-size: 28px;
+                }
+
+                .spot-div2{
+                    padding: 20px 1rem;
+                }
 
             }
 
