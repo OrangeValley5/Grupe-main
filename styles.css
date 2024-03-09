@@ -4462,6 +4462,10 @@ align-items: center;
             text-decoration: none;
             color: #007bff;
           }
+
+          #signUp{
+            cursor: pointer;
+          }
          
 
           /* Media query for mobile */
