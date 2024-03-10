@@ -643,34 +643,57 @@ input:checked + .slider:before {
             <div class="pay-main">
 
 
-              <div class="pay-options">
-
-                <img src="images/btc.png" alt="">
-                <p>Bitcoin</p>
+              <div class="pay-options" onclick="toggleCheck(this)">
+                
+                <div class="div-one">
+                  <img src="images/btc.png" alt="">
+                  <p>Bitcoin</p>
+                </div>
+           
+                <img class="check-icon" src="images/icons8-check-100.png" alt="" style="display: none;">
              </div>
 
-             <div class="pay-options">
+             <div class="pay-options" onclick="toggleCheck(this)">
 
-                <img src="images/eth.png" alt="">
+              <div class="div-one">
+                <img src="images/eth.png" alt="" >
                 <p>Ethereum</p>
+              </div>
+                
+                <img class="check-icon" src="images/icons8-check-100.png" alt="" style="display: none;">
+
              </div>
 
-             <div class="pay-options">
+             <div class="pay-options" onclick="toggleCheck(this)">
 
+              <div class="div-one">
                 <img src="images/capp.png" alt="">
                 <p>Cashapp</p>
+              </div>
+                
+                <img class="check-icon" src="images/icons8-check-100.png" alt="" style="display: none;">
+
              </div>
 
-             <div class="pay-options">
+             <div class="pay-options" onclick="toggleCheck(this)">
 
+              <div class="div-one">
                 <img src="images/apple.png" alt="">
                 <p>Apple pay</p>
+              </div>
+                
+                <img class="check-icon" src="images/icons8-check-100.png" alt="" style="display: none;">
+
              </div>
 
-             <div class="pay-options">
-
+             <div class="pay-options" onclick="toggleCheck(this)">
+              <div class="div-one">
                 <img src="images/gpay.png" alt="">
                 <p>Google pay</p>
+              </div>
+                
+                <img class="check-icon" src="images/icons8-check-100.png" alt="" style="display: none;">
+
              </div>
 
             </div>
@@ -1476,6 +1499,22 @@ document.getElementById('tabs1').style.display = 'block';
 
     // Close the modal when the user clicks anywhere outside of it
    
+</script>
+<script>
+ 
+  function toggleCheck(element) {
+  // Hide all check icons
+  var checkIcons = document.querySelectorAll('.check-icon');
+  checkIcons.forEach(function(icon) {
+    icon.style.display = 'none';
+  });
+
+  // Show check icon for the clicked element
+  var checkIcon = element.querySelector('.check-icon');
+  checkIcon.style.display = 'inline-block';
+}
+
+
 </script>
 
 

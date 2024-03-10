@@ -2839,6 +2839,7 @@ color: #000;
 }
 
 
+
 .pay-options{
     height: 50px;
     width: 50%;
@@ -2852,20 +2853,27 @@ color: #000;
     font-family: Bricolage Grotesque;
     font-size: 16px;
     display: flex;
+    cursor: pointer;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
 }
 
 .pay-options:hover{
-    background-color: #b7daff;
+    height: 55px;
 }
+
 
 .pay-options p{
     color: black;
     margin-left: 8px;
 }
 
+.div-one{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
 .pay-options img{
     width: 15px;
@@ -3705,7 +3713,7 @@ align-items: center;
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
-            margin-bottom: 00px;
+            margin-bottom: 380px;
 
         }
 
