@@ -70,7 +70,8 @@ nav a{
 
  .active{
     padding: 10px 20px;
-    background-color: #686868;
+    background-color: #a5d0ff;
+    color: #fff;
     margin-left: 10px;
 }
 .active:hover{
@@ -1148,7 +1149,11 @@ margin-bottom: 20px;
 
 
 
-
+.switch-container a.active {
+    color: blue; /* Change color to indicate active link */
+    font-weight: bold; /* Optionally make the text bold */
+  }
+  
 
 
 
@@ -1686,8 +1691,8 @@ width: 100%;
 
  .active{
     padding: 10px 20px;
-    background-color: #686868;
     margin-left: 10px;
+    color: #fff;
 }
 .active:hover{
     padding: 10px 20px;
@@ -3693,8 +3698,8 @@ align-items: center;
 
         .deposit-container a:hover{
             border: 1px solid #ffffff;
-            color: #fff;
-            background-color: #007bff;
+            color: #007bff;
+            background-color: #b4d8ff;
         }
 
         .slimline{

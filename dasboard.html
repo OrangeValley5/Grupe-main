@@ -383,11 +383,14 @@ input:checked + .slider:before {
     <div class="profile-switch" id="profile-switch">
 
       <div class="switch-container">
-      <a href="#" onclick="openPage2('personal-settings')">Personal Settings</a>
-      <a href="#" onclick="openPage2('bank')">Withdrawal Settings</a>
-      <a href="#" onclick="openPage2('security')">Password/Security</a>
-      <a href="#" onclick="openPage2('others')">Other Settings</a>
+      <a href="#" onclick="openPage2('personal-settings')" id="personal-settings-link">Personal Settings</a>
+      <a href="#" onclick="openPage2('bank')" id="bank-link">Withdrawal Settings</a>
+      <a href="#" onclick="openPage2('security')" id="security-link">Password/Security</a>
+      <a href="#" onclick="openPage2('others')" id="others-link">Other Settings</a>
       </div>
+
+      
+      
       
 
 
@@ -726,6 +729,20 @@ input:checked + .slider:before {
 
   <h6>Bitcoin Address</h6>
 
+<div>
+  <input type="file" class="inputFile" id="fileInp" onchange="getFile(event)" accept="image/png, image/jpeg">
+<button onclick="uploadImage()">Upload</button>
+<label for="fileInp"></label>
+<span class="fileText"></span>
+<div class="bar">
+  <div class="progress"></div>
+</div>
+<div class="uploadPercentage">0%</div>
+<div class="imageUploaded">
+  <img src="" alt="" class="img">
+</div>
+</div>
+
   <div class="pay-box">
       <p>bnbefyuefy78ewy78ewyfeiufyd7gy7dgdfhjd</p>
       <div class="copy-btn">
@@ -791,23 +808,23 @@ input:checked + .slider:before {
             <p>Lite Plan</p>
             <div class="features">
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Minimum deposit $25</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Maximum deposit $25</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Instant withdrawals</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/cancel.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>7 days duration</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/cancel.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>$10 gift bonus</p>
                 </div>
             </div>
@@ -828,23 +845,23 @@ input:checked + .slider:before {
             <p>Everything in our lite plan plus</p>
             <div class="features">
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Minimum deposit $50</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Maximum deposit $25</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Instant withdrawal</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Limited access to VIP members</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/cancel.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Access to VIP badge</p>
                 </div>
             </div>
@@ -869,23 +886,23 @@ input:checked + .slider:before {
             <p>Everything in our basic plan plus</p>
             <div class="features">
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Minimum deposit $100</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Maximum deposit $25</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Instant withdrawals</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Access to VIP chats</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/cancel.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Access to VIP badge</p>
                 </div>
             </div>
@@ -905,23 +922,23 @@ input:checked + .slider:before {
             <p>Everything in our premium plan plus</p>
             <div class="features">
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Unlimited Chats</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Unlimited profile views</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Unlimited Gifts</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Access to VIP Chats</p>
                 </div>
                 <div class="ft-items">
-                    <img src="images/yeswhite.png" alt="">
+                    <img src="images/icons8-check-96.png" alt="">
                     <p>Access to VIP badge</p>
                 </div>
             </div>
@@ -948,7 +965,7 @@ input:checked + .slider:before {
         </div>
 
 
-        <div id="tab1"  style="display:none;">
+        <div id="tab1" class="tab-content" style="display:none;">
 
 
           <div class="depo-topbar">
@@ -1003,7 +1020,7 @@ input:checked + .slider:before {
       
         </div>
 
-        <div id="tab2"  style="display:none;">
+        <div id="tab2" class="tab-content"  style="display:none;">
 
           <h3>Withdraw</h3>
 
@@ -1060,7 +1077,7 @@ input:checked + .slider:before {
       
         </div>
 
-        <div id="tab3"  style="display:none;">
+        <div id="tab3" class="tab-content"  style="display:none;">
 
           <h3>Others</h3>
 
@@ -1288,10 +1305,7 @@ input:checked + .slider:before {
   </script>
     
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js"></script>
     <script src="./Mail.js"></script>
-    <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
   <script>
@@ -1382,6 +1396,7 @@ input:checked + .slider:before {
     tabcontent[i].style.display = "none";
   }
   document.getElementById(pageName2).style.display = "block";
+  t
 }
 
 </script>
@@ -1394,6 +1409,7 @@ input:checked + .slider:before {
     tabcontent[i].style.display = "none";
   }
   document.getElementById(pageName).style.display = "block";
+  
 }
 </script>
 
@@ -1426,7 +1442,6 @@ document.getElementById('toggleSwitch').addEventListener('change', function() {
     menuLinks[i].classList.toggle("hidden");
   }
 }
-
 </script>
 
 
@@ -1500,6 +1515,7 @@ document.getElementById('tabs1').style.display = 'block';
     // Close the modal when the user clicks anywhere outside of it
    
 </script>
+
 <script>
  
   function toggleCheck(element) {
@@ -1517,6 +1533,31 @@ document.getElementById('tabs1').style.display = 'block';
 
 </script>
 
+<script>
+  // Get all links and content elements
+var links = document.querySelectorAll('.deposit-container a');
+var contents = document.querySelectorAll('.tab-content');
 
+// Add click event listener to each link
+links.forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    // Remove active class from all links and content elements
+    links.forEach(function(link) {
+      link.classList.remove('active');
+    });
+    contents.forEach(function(content) {
+      content.classList.remove('active');
+    });
+
+    // Add active class to clicked link and corresponding content
+    link.classList.add('active');
+    var targetId = link.getAttribute('href').substr(1);
+  });
+});
+
+</script>
+ 
 </body>
 </html>
