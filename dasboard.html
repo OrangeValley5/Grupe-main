@@ -157,13 +157,13 @@ input:checked + .slider:before {
     <div id="myModal" class="modal">
         <div class="modal-content">
             <h2>Welcome on board !</h2>
-            <p>This is a modal that pops up when i arrive on the dashboard page.</p>
+            <p>We'll send you an email shortly to verfiy your account. In the meantime feel free to explore and make your first deposit</p>
 
             <div class="cirx">
 
             </div>
 
-            <img src="images/btwallet.png" alt="">
+            <img src="images/mail.png" alt="">
 
             <a class="flow"   href="sub.html">Make deposit</a>
         </div>
@@ -187,6 +187,28 @@ input:checked + .slider:before {
           <a class="flow"   href="sub.html">Make deposit</a>
       </div>
   </div>
+
+
+
+  <div id="myModal6" class="modal6">
+    <div class="modal-content6">
+
+      <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal2()">&times;</a>
+
+        <h5>Sign out</h5>
+        <p>Are you sure you want to log out ?</p>
+
+        <div class="modal-div">
+          <a href="index.html">Yes</a>
+          <a href="#" onclick="closeModal2()">No</a>
+        </div>
+
+
+    </div>
+</div>
+
+
+
 
     <div class="sidebar" id="sidebar" data-aos="fade-up">
       <a href="javascript:void(0)" id="closer" class="closebtn" onclick="toggleNav()">&times;</a>
@@ -238,9 +260,9 @@ input:checked + .slider:before {
         <a href="#" class="menu-link" >Profit History</a>
       </div>
 
-      <div class="iconz-div"  onclick="openPage('home'), toggleNav()">
+      <div class="iconz-div"  onclick="openModal2(), toggleNav()">
         <img id="togglePassword" src="images/icons8-logout-64.png" alt="">
-        <a href="index.html" class="menu-link">Logout</a>
+        <a href="#" class="menu-link">Logout</a>
       </div>
   </div>
   
@@ -1510,6 +1532,34 @@ document.getElementById('tabs1').style.display = 'block';
                 modal5.style.display = "none";
             }, 50); // Delay added to match the transition duration
             document.body.classList.remove('modal-open5'); 
+        }
+
+    // Close the modal when the user clicks anywhere outside of it
+   
+</script>
+
+
+<script>
+    // Get the modal
+    var modal6 = document.getElementById("myModal6");
+
+    modal6.style.display = "none";
+
+    function openModal2() {
+            modal6.style.display = "block";
+            setTimeout(function() {
+                modal6.classList.add("open6");
+            }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+            document.body.classList.add('modal-open6');
+        }
+
+        function closeModal2() {
+            modal6.classList.remove("open6");
+            setTimeout(function() {
+                modal6.style.display = "none";
+            }, 50); // Delay added to match the transition duration
+            document.body.classList.remove('modal-open6'); 
         }
 
     // Close the modal when the user clicks anywhere outside of it

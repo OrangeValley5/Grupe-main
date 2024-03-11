@@ -4479,6 +4479,63 @@ align-items: center;
           #signUp{
             cursor: pointer;
           }
+
+           .modal6 {
+             display: none; /* Hidden by default */
+             position: fixed; /* Stay in place */
+             z-index: 10000; /* Sit on top */
+             left: 0;
+             top: 0;
+             width: 100%; /* Full width */
+             height: 100vh; /* Full height */
+             overflow: auto; /* Enable scroll if needed */
+             background-color: rgba(0,0,0,0.5); /* Black w/ 50% opacity */
+             padding-top: 60px; /* Location of the box */
+             backdrop-filter: blur(5px);
+          }
+
+           .modal-content6 {
+             background-color: #fefefe;
+             margin: 5% auto; /* 5% from the top and centered */
+             padding: 20px;
+             border-radius: 14px;
+             color: rgb(0, 0, 0);
+             width: 30%;
+             height: 30%; /* Could be more or less, depending on screen size */
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             align-content: center;
+             font-family: Bricolage Grotesque;
+          }
+
+           .modal-content6 p{
+             text-align: center;
+             font-size: 14px;
+             color: #8c8c8c;
+             margin-top: 1px;
+           }
+
+           .modal-content6 a{
+             text-decoration: none;
+           }
+
+            .modal-div{
+              will-change: 100%;
+              display: flex;
+              flex-direction: row;
+              margin-top: 25px;
+              gap: 20px;
+            }
+
+
+            .modal-div a{
+                background-color: #007bff;
+                padding: 8px 30px;
+                border-radius: 4px;
+                color: white;
+                text-decoration: none;
+            }
          
 
           /* Media query for mobile */
