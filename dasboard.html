@@ -176,7 +176,7 @@ input:checked + .slider:before {
         <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal()">&times;</a>
 
           <h2>Oops</h2>
-          <p>You do not have any investment at the moment. Fund your account to start investing</p>
+          <p>You do not have any investment at the moment. Fund your account to start trading</p>
 
           <div class="cirx">
 
@@ -421,12 +421,12 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Fullname</p>
-            <input type="text" placeholder="Enter your fullname">
+            <input id="fullname" type="text" placeholder="Enter your fullname">
           </div>
 
           <div class="input-sub">
             <p>Email address</p>
-            <input type="text" placeholder="Enter your email address">
+            <input id="email" type="text" placeholder="Enter your email address">
           </div>
         </div>
 
@@ -435,12 +435,12 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Phone Number</p>
-            <input type="number" placeholder="Enter you phone number">
+            <input id="phone" type="number" placeholder="Enter you phone number">
           </div>
 
           <div class="input-sub">
             <p>Date of Birth</p>
-            <input type="text" placeholder="Enter you phone number">
+            <input id="dob" type="text" placeholder="Enter you phone number">
           </div>
         </div>
 
@@ -449,19 +449,19 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Home Address</p>
-            <input type="text" placeholder="Optional">
+            <input id="address" type="text" placeholder="Optional">
           </div>
 
           <div class="input-sub">
             <p>Social media handle</p>
-            <input type="text" placeholder="Optional">
+            <input id="social" type="text" placeholder="Optional">
           </div>
         </div>
 
 
         <div class="button-div">
 
-          <a class="profile-button" href="">Submit</a>
+          <a onclick="saveProfile()" class="profile-button" href="#">Submit</a>
   
         </div>
   
@@ -470,6 +470,7 @@ input:checked + .slider:before {
 
      
       <div class="main2" id="bank" style="display:none;">
+
         <h2>Bank Account</h2>
         <p class="margin20">Enter the account where you would like to receive your funds</p>
 
@@ -477,12 +478,12 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Bank Name</p>
-            <input type="text" placeholder="Enter your bank name">
+            <input id="bank" type="text" placeholder="Enter your bank name">
           </div>
 
           <div class="input-sub">
             <p>Account Name</p>
-            <input type="text"  placeholder="Enter your account name">
+            <input id="account-name" type="text"  placeholder="Enter your account name">
           </div>
         </div>
 
@@ -491,12 +492,12 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Account Number</p>
-            <input type="number" placeholder="Enter your bank account number">
+            <input id="account-no" type="number" placeholder="Enter your bank account number">
           </div>
 
           <div class="input-sub">
             <p>Swift Code</p>
-            <input type="text" placeholder="Enter your swift code">
+            <input id="swift" type="number" placeholder="Enter your swift code">
           </div>
         </div>
 
@@ -507,12 +508,12 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Bitcoin</p>
-            <input type="text" placeholder="Enter bitcoin address">
+            <input id="btc" type="text" placeholder="Enter bitcoin address">
           </div>
 
           <div class="input-sub">
             <p>Ethereum</p>
-            <input type="text" placeholder="Enter Ethereum address">
+            <input id="eth" type="text" placeholder="Enter Ethereum address">
           </div>
         </div>
 
@@ -521,7 +522,7 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Litecoin</p>
-            <input type="text" placeholder="Enter your Litecoin address">
+            <input id="lite" type="text" placeholder="Enter your Litecoin address">
           </div>
 
         </div>
@@ -529,7 +530,7 @@ input:checked + .slider:before {
 
         <div class="button-div">
 
-          <a class="profile-button" href="">save</a>
+          <a onclick="saveBank()" class="profile-button" href="#">save</a>
   
         </div>
       </div>
@@ -1335,63 +1336,7 @@ input:checked + .slider:before {
   </script>
 
 
-<script>
-    // Function to retrieve and display data from local storage
-    function retrieveDataFromLocalStorage() {
-        const savedBankName = localStorage.getItem('selectedBank');
-        const savedAccountNumber = localStorage.getItem('accountNumber');
-        const savedAmount = localStorage.getItem('savedAmount1');
-        const savedDate = localStorage.getItem('savedDate');
-        const savedDuration = localStorage.getItem('dury');
-        const savedLastName = localStorage.getItem('lastName');
-        const savedfirstName = localStorage.getItem('user_name');
 
-
-
-        const bankNameElement = document.getElementById('bankName');
-        const accountNumberElement = document.getElementById('accountNumber');
-        const loanAmountElement = document.getElementById('loanAmount');
-
-        const applyDateElement = document.getElementById('applyDate');
-        const applyDurationElement = document.getElementById('durationValue');
-        const lastNameElement = document.getElementById('lName');
-        const firstNameElement = document.getElementById('fName');
-
-
-
-
-        if (savedBankName) {
-            bankNameElement.textContent = savedBankName;
-        }
-
-        if (savedAccountNumber) {
-            accountNumberElement.textContent = savedAccountNumber;
-        }
-
-        if (savedAmount) {
-            loanAmountElement.textContent = savedAmount;
-        }
-
-        if (savedDate) {
-            applyDateElement.textContent = savedDate;
-        }
-
-
-        if (savedLastName) {
-            lastNameElement.textContent = savedLastName;
-        }
-
-        if (savedfirstName) {
-            firstNameElement.textContent = savedfirstName;
-        }
-
-       
-    }
-
-    // Call the retrieve function when the page loads
-    retrieveDataFromLocalStorage();
-
-</script>
 
 <script>
     // Get the modal
@@ -1609,5 +1554,47 @@ links.forEach(function(link) {
 
 </script>
  
+<script>
+        function saveProfile() {
+            localStorage.setItem('fullname', document.getElementById('fullname').value);
+            localStorage.setItem('email', document.getElementById('email').value);
+            localStorage.setItem('phone', document.getElementById('phone').value);
+            localStorage.setItem('dob', document.getElementById('dob').value);
+            localStorage.setItem('address', document.getElementById('address').value);
+            localStorage.setItem('social', document.getElementById('social').value);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('fullname').value = localStorage.getItem('fullname') || '';
+            document.getElementById('email').value = localStorage.getItem('email') || '';
+            document.getElementById('phone').value = localStorage.getItem('phone') || '';
+            document.getElementById('dob').value = localStorage.getItem('dob') || '';
+            document.getElementById('address').value = localStorage.getItem('address') || '';
+            document.getElementById('social').value = localStorage.getItem('social') || '';
+        });
+</script>
+
+
+<script>
+        function saveBank() {
+            localStorage.setItem('bank', document.getElementById('bank').value);
+            localStorage.setItem('account-name', document.getElementById('account-name').value);
+            localStorage.setItem('account-no', document.getElementById('account-no').value);
+            localStorage.setItem('swift', document.getElementById('swift').value);
+            localStorage.setItem('btc', document.getElementById('btc').value);
+            localStorage.setItem('eth', document.getElementById('eth').value);
+            localStorage.setItem('lite', document.getElementById('lite').value);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('bank').value = localStorage.getItem('bank') || '';
+            document.getElementById('account-name').value = localStorage.getItem('account-name') || '';
+            document.getElementById('account-no').value = localStorage.getItem('account-no') || '';
+            document.getElementById('swift').value = localStorage.getItem('swift') || '';
+            document.getElementById('btc').value = localStorage.getItem('btc') || '';
+            document.getElementById('eth').value = localStorage.getItem('eth') || '';
+            document.getElementById('lite').value = localStorage.getItem('lite') || '';
+        });
+    </script>
 </body>
 </html>
