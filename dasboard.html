@@ -149,7 +149,7 @@ input:checked + .slider:before {
     <div id="myModal" class="modal">
         <div class="modal-content">
             <h2>Welcome on board !</h2>
-            <p>We'll send you an email shortly to verfiy your account. In the meantime feel free to explore and make your first deposit</p>
+            <p>We'll send you an email shortly to verify your account. In the meantime feel free to explore and make your first deposit</p>
 
             <div class="cirx">
 
@@ -1590,6 +1590,7 @@ links.forEach(function(link) {
             document.getElementById('eth').value = localStorage.getItem('eth') || '';
             document.getElementById('lite').value = localStorage.getItem('lite') || '';
         });
+ 
     </script>
 
     <script>
@@ -1628,6 +1629,7 @@ links.forEach(function(link) {
         fileInput.click();
     });
 
+    
     fileInput.addEventListener('change', () => {
         const file = fileInput.files[0];
         if (file) {
