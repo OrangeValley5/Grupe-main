@@ -31,15 +31,7 @@
     <script src="./Mail.js"></script>
     <script src="script.js" defer></script>
 
-    <script>
-        const name = localStorage.getItem('user_name');
-
-    if (name) {
-      const helloElement = document.getElementById('fName'); // Assuming 'heading' is the ID of the 'Hello' element.
-      helloElement.textContent = name;
-    }
-    
-      </script>
+   
 
       <style>
 .switch {
@@ -785,10 +777,11 @@ input:checked + .slider:before {
 
   <div id="beet" class="bt-container">
 
-      <p>No file selected</p>
-      <p id="choose-file">Choose File</p>
-      
+      <p id="file-name">No file selected</p>
+      <p id="file-picker" onclick="document.getElementById('file-input').click();">Choose File</p>
+      <input type="file" id="file-input" style="display: none;" onchange="handleFileSelect(event);">
   </div>
+  
   
 
 
@@ -1623,5 +1616,31 @@ links.forEach(function(link) {
     });
      </script>
    
+    
+
+
+    <script>
+    const filePicker = document.getElementById('file-picker');
+    const fileInput = document.getElementById('file-input');
+    const fileNameDisplay = document.getElementById('file-name');
+
+    filePicker.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+        if (file) {
+          fileNameDisplay.textContent = 'Selected file: ' + file.name;
+            // You can now use the selected file for further processing
+        }
+    });
+</script>
+
+
+    
+
+   
+    
 </body>
 </html>

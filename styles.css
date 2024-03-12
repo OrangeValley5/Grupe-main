@@ -2972,7 +2972,7 @@ color: #000;
     color: #000;
 }
 
-#choose-file{
+#file-picker{
     background-color: hsl(211, 100%, 85%);
     color: #007bff;
     border-radius: 4px;
