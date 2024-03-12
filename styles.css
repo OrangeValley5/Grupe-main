@@ -1689,10 +1689,12 @@ width: 100%;
     
 }
 
- .active{
+ .activer{
     padding: 10px 20px;
     margin-left: 10px;
     color: #fff;
+    border: 1px solid #007bff;
+    background-color: #007bff;
 }
 .active:hover{
     padding: 10px 20px;
