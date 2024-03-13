@@ -5222,6 +5222,10 @@ align-items: center;
                     flex-direction: column;
                 }
 
+                .activer{
+                    display: none;
+                }
+
             }
 
    
