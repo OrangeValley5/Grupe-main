@@ -109,7 +109,6 @@ nav a{
 
 .double-container{
     height: 100%;
-    background-color: #007bff;
     width: 100%;
     position: relative;
 }
@@ -1429,7 +1428,7 @@ footer span {
     }
 
     nav{
-    padding: 2rem 2.0rem;
+    padding: 2rem 1.4rem;
     }
 
    
@@ -1911,7 +1910,7 @@ color: #000;
     
     
         .section1{
-            padding: 50px 2rem;
+            padding: 5px 2rem;
             text-align: center;
         }
 
@@ -5090,7 +5089,7 @@ align-items: center;
 
 
             .tested{
-                height: 330px;
+                height: 305px;
                 width: 330px; 
 
               }
@@ -5226,11 +5225,15 @@ align-items: center;
                     display: none;
                 }
                 .section1 h1{
-                    font-size: 32px;
+                    font-size: 45px;
                 }
 
                 .section1{
                     height: 100vh;
+                }
+
+                .section1 p{
+                    margin-top: 1rem;
                 }
 
             }
