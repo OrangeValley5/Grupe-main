@@ -5229,6 +5229,10 @@ align-items: center;
                     font-size: 32px;
                 }
 
+                .section1{
+                    height: 100vh;
+                }
+
             }
 
    
