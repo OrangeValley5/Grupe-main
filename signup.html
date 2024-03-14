@@ -318,6 +318,8 @@
         name: name,
         email: email
       })
+
+      saveNames();
   
       window.location.href = 'dasboard.html';
       // ...
@@ -330,11 +332,16 @@
       // ..
     });
       });
-  
-    
-    
-   
     
       </script>
+
+<script>
+  function saveNames() {
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      localStorage.setItem('firstName', firstName);
+      localStorage.setItem('lastName', lastName);
+  }
+</script>
 </body>
 </html>

@@ -68,17 +68,6 @@ nav a{
     height: 40px;
   }
 
- .active{
-    padding: 10px 20px;
-    background-color: #a5d0ff;
-    color: #fff;
-    margin-left: 10px;
-}
-.active:hover{
-    padding: 10px 20px;
-    background-color: #000000;
-}
-
 .nav li:hover{
     background-color: #777;
 }
@@ -1696,10 +1685,7 @@ width: 100%;
     border: 1px solid #007bff;
     background-color: #007bff;
 }
-.active:hover{
-    padding: 10px 20px;
-    background-color: #000000;
-}
+
 
 .nav li:hover{
     background-color: #777;
