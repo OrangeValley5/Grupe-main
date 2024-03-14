@@ -86,7 +86,7 @@ nav a{
 
 .section1{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #000000;
     padding: 50px 6rem;
     color: white;
@@ -109,6 +109,7 @@ nav a{
 
 .double-container{
     height: 100%;
+    background-color: #007bff;
     width: 100%;
     position: relative;
 }
@@ -1428,7 +1429,7 @@ footer span {
     }
 
     nav{
-    padding: 2rem 1.4rem;
+    padding: 2rem 2.0rem;
     }
 
    
@@ -1910,7 +1911,7 @@ color: #000;
     
     
         .section1{
-            padding: 5px 2rem;
+            padding: 50px 2rem;
             text-align: center;
         }
 
@@ -2971,7 +2972,7 @@ color: #000;
     color: #000;
 }
 
-#file-picker{
+#file-file{
     background-color: hsl(211, 100%, 85%);
     color: #007bff;
     border-radius: 4px;
@@ -4537,10 +4538,57 @@ align-items: center;
                 color: white;
                 text-decoration: none;
             }
+
+            .sec1-container{
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                font-family: Bricolage Grotesque;
+
+            }
+
+            .sec1-img-div img{
+                width: 500px;
+                height: 500px;
+            }
+
+            .sec1-txt-div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .sec1-txt-div a{
+                background-color: #fff;
+                padding: 10px;
+                text-align: center;
+                color: #000;
+                text-decoration: none;
+                border-radius: 8px;
+                margin-top: 20px;
+            }
          
 
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
+
+            .activer{
+                display: none;
+            }
+            .sec1-container{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            .sec1-txt-div h1{
+                font-size: 52px;
+            }
+
+
+            .sec1-img-div img{
+                width: 300px;
+                height: 300px;
+            }
 
             .modal-content6 {
              padding: 20px;
@@ -5089,7 +5137,7 @@ align-items: center;
 
 
             .tested{
-                height: 305px;
+                height: 330px;
                 width: 330px; 
 
               }
@@ -5219,21 +5267,6 @@ align-items: center;
 
                 .about-div3{
                     flex-direction: column;
-                }
-
-                .activer{
-                    display: none;
-                }
-                .section1 h1{
-                    font-size: 45px;
-                }
-
-                .section1{
-                    height: 100vh;
-                }
-
-                .section1 p{
-                    margin-top: 1rem;
                 }
 
             }

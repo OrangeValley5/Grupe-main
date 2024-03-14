@@ -28,8 +28,8 @@
     <title>Grupe</title>
     <script src="./Mail.js"></script>
 
-    <!-- Start of Async Drift Code -->
-    <script>
+   <!-- Start of Async Drift Code -->
+<script>
     "use strict";
     
     !function() {
@@ -53,7 +53,7 @@
       }
     }();
     drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('f8vbgs4dfdkp');
+    drift.load('6p36g6kuhk89');
     </script>
     <!-- End of Async Drift Code -->
     
@@ -105,35 +105,28 @@
 
     <div>
         <div class="section1" >
-            <div class="col-container" data-aos="fade-up">
-                <div class="col1">
-                    <div class="double-container">
-                        
+            <div class="sec1-container">
 
-                        <div class="fone-container">
-                        <img src="images/bt.png" class="tested" alt="">
-                        </div>
+                <div class="sec1-img-div">
+                    <img src="images/bt.png" alt="">
 
-                        
+                </div>
 
-                       
+                <div class="sec1-txt-div">
+                    <h1 id="typing"> </h1>
 
-                      </div>
+                    <p>
+                        We specialize in providing secure and reliable investment solutions tailored to your financial goals.
+                     </p>
+
+                     <a href="preview.html">See our packages</a>                  
+
                     
-                   </div>
+                </div>
 
 
-                   
-                 <div class="col2">
-                    <h1 id="typed-text"></h1>
-                    <div class="col1-div">
-                        <p>
-                            We specialize in providing secure and reliable investment solutions tailored to your financial goals.
-                         </p>
-                    </div>
 
-                    <a href="preview.html"><button >See our packages</button></a>                  
-                 </div>
+
             </div>
 
             
@@ -1098,7 +1091,7 @@ const speed = 90; // Speed of typing in milliseconds
 
 function typeWriter() {
   if (index < text.length) {
-    document.getElementById("typed-text").innerHTML += text.charAt(index);
+    document.getElementById("typing").innerHTML += text.charAt(index);
     index++;
     setTimeout(typeWriter, speed);
   }
