@@ -27,3 +27,32 @@
         <a href="preview.html"><button >See our packages</button></a>                  
     </div>
 </div>
+
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that closes the modal
+    var closeButton = document.getElementById("closeButton");
+
+    // Show the modal when the page loads
+    window.onload = function() {
+        modal.style.display = "block";
+    }
+
+    // Close the modal when the user clicks anywhere outside of it
+    window.onclick = function(event) {
+        if (event.target !== modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Close the modal when the user clicks the button inside it
+    closeButton.onclick = function() {
+        openPage('deposit')
+        modal.style.display = "none";
+        
+    }
+</script>

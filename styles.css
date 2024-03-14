@@ -4570,6 +4570,10 @@ align-items: center;
                 margin-top: 20px;
             }
 
+            #closer{
+                text-decoration: none;
+            }
+
 
             .disabled {
                 background-color: #999; /* Grey text color */

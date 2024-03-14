@@ -148,6 +148,8 @@ input:checked + .slider:before {
 
     <div id="myModal" class="modal">
         <div class="modal-content">
+          <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal()">&times;</a>
+
             <h2>Welcome on board !</h2>
             <p>We'll send you an email shortly to verify your account. In the meantime feel free to explore and make your first deposit</p>
 
@@ -157,7 +159,7 @@ input:checked + .slider:before {
 
             <img onclick="closer()" src="images/mail.png" alt="">
 
-            <a class="flow" id="closeButton" href="#">Make deposit</a>
+            <a class="flow" id="closing" onclick="openPage('deposit')"   href="#">Make deposit</a>
         </div>
     </div>
 
@@ -176,7 +178,7 @@ input:checked + .slider:before {
 
           <img src="images/oops.png" alt="">
 
-          <a class="flow"   href="sub.html">Make deposit</a>
+          <a class="flow" onclick="openPage('deposit'), closeModal()"   href="#">Make deposit</a>
       </div>
   </div>
 
@@ -1648,6 +1650,7 @@ links.forEach(function(link) {
     fullNameInput.value = `${firstName} ${lastName}`;
 </script>
 
+
 <script>
     // Get the modal
     var modal = document.getElementById("myModal");
@@ -1669,9 +1672,7 @@ links.forEach(function(link) {
 
     // Close the modal when the user clicks the button inside it
     closeButton.onclick = function() {
-        openPage('deposit')
         modal.style.display = "none";
-        
     }
 </script>
 
