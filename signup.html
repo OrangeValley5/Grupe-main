@@ -166,7 +166,7 @@
                   </p>
 
                   <label class="switch">
-                    <input type="checkbox" id="toggleSwitch">
+                    <input type="checkbox" id="toggleSwitch1">
                     <span class="slider"></span>
                   </label>
                 </div>
@@ -177,12 +177,12 @@
                   </p>
 
                   <label class="switch">
-                    <input type="checkbox" id="toggleSwitch">
+                    <input type="checkbox" id="toggleSwitch2">
                     <span class="slider"></span>
                   </label>
                 </div>
 
-                  <a id="signUp" class="flow">Create Account</a>
+                  <a id="signUp" onclick="validateForm()" class="flow disabled" >Create Account</a>
                   <a class="flow3" href="login.html"> Sign In</a>
 
                   
@@ -302,8 +302,26 @@
       const auth = getAuth();
   
       signUp.addEventListener('click',(e) => {
+
+        validateForm();
   
-        var email = document.getElementById('email').value;
+       
+      });
+
+
+      function validateForm() {
+        var firstName = document.getElementById('firstName').value.trim();
+        var lastName = document.getElementById('lastName').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var password = document.getElementById('password').value.trim();
+
+        if (firstName === '' || lastName === '' || email === '' || password === '') {
+            alert('Please fill in all fields.');
+        } else {
+           // alert('Form submitted successfully.');
+            // You can submit the form or perform other actions here
+
+            var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         var name = document.getElementById('firstName').value;
   
@@ -331,7 +349,8 @@
       alert(errorMessage);
       // ..
     });
-      });
+        }
+    }
     
       </script>
 
@@ -343,5 +362,30 @@
       localStorage.setItem('lastName', lastName);
   }
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const toggleSwitch1 = document.getElementById('toggleSwitch1');
+      const toggleSwitch2 = document.getElementById('toggleSwitch2');
+      const signUpButton = document.getElementById('signUp');
+
+      function updateButtonState() {
+          if (toggleSwitch1.checked && toggleSwitch2.checked) {
+              signUpButton.classList.remove('disabled');
+          } else {
+              signUpButton.classList.add('disabled');
+          }
+      }
+
+      toggleSwitch1.addEventListener('change', updateButtonState);
+      toggleSwitch2.addEventListener('change', updateButtonState);
+  });
+</script>
+
+<script>
+   
+</script>
+
+
 </body>
 </html>

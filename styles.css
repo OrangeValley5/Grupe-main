@@ -192,6 +192,8 @@ nav a{
 }
 
 
+
+
 .likes-count{
     background-image: url("https://images.pexels.com/photos/7734593/pexels-photo-7734593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     margin-top: 50px;
@@ -4566,6 +4568,14 @@ align-items: center;
                 text-decoration: none;
                 border-radius: 8px;
                 margin-top: 20px;
+            }
+
+
+            .disabled {
+                background-color: #999; /* Grey text color */
+                pointer-events: none; /* Disable click events */
+                text-decoration: none; /* Remove underline */
+                cursor: default; /* Default cursor */
             }
 
             @keyframes moveUpDown {
