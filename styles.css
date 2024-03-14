@@ -214,7 +214,7 @@ nav a{
     padding-top: 80px;
     padding-left: 20px;
     animation: floatAnimation2 5s infinite alternate;
-
+    font-family: Bricolage Grotesque;
 }
 
 .price-holder1{
@@ -230,9 +230,13 @@ nav a{
     margin-bottom: 8px;
     border-radius: 8px;
     border: 1px solid #fff;
-    
-
+    display: flex;
+    justify-content: space-between;
 }
+
+
+
+
 
 .holders{
     height: 100%;
@@ -240,8 +244,11 @@ nav a{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
 
-    
+.holders h5{
+    font-weight: lighter;
+
 }
 
 .round {
@@ -260,7 +267,7 @@ nav a{
 }
 
 .text-holder{
-    width: 90px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
