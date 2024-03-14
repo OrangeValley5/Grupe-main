@@ -3074,7 +3074,7 @@ color: #000;
 }
 
 .modal-content3 {
-    background-color: #fefefe;
+    background-color: #ffffffba;
     margin: 5% auto; /* 5% from the top and centered */
     padding: 20px;
     border-radius: 14px;
@@ -3086,6 +3086,7 @@ color: #000;
     align-items: center;
     align-content: center;
     font-family: Bricolage Grotesque;
+    border: 1px solid #ffffff;
 }
 
 
