@@ -981,9 +981,9 @@
 
 // Function to generate random content and display in modal
 function generateRandomContent() {
-  const names = ["Chris", "Emma", "John", "Linda", "Michael", "Sarah"];
-  const amounts = ["$100", "$200", "$300", "$400", "$500", "$600"];
-  const countries = ["Nigeria", "USA", "Canada", "UK", "Australia", "Brazil"];
+  const names = ["Chris", "Emma", "Turner", "John", "Linda", "Michael", "Sarah", "Amanda", "Chad", "Henrique", "Laura", "Becky", "Jared"];
+  const amounts = ["$100", "$200", "$300", "$400", "$500", "$600", "$50", "$75", "$120", "$250", "$95", "$50"];
+  const countries = ["Florida", "USA", "Canada", "UK", "Australia", "Sydney", "Chicago", "London", "Maimi", "New york", "New Jersey", "Michigan"];
   
   const name = names[Math.floor(Math.random() * names.length)];
   const amount = amounts[Math.floor(Math.random() * amounts.length)];
@@ -1010,7 +1010,7 @@ function hideEarnModal() {
     earnModal.style.display = "none";
     generateRandomContent();
     showAndRefreshModal();
-  }, 500);
+  }, 800);
 }
 
 function hideEarnModal2() {
@@ -1054,6 +1054,7 @@ window.addEventListener("load", showAndRefreshModal);
   this.classList.toggle('open');
 });
   </script>
+
   <script>
     // Get the modal
     var modal = document.getElementById("myModal3");
