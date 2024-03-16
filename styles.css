@@ -3951,6 +3951,7 @@ align-items: center;
             margin-left: 0; /* Slide in from the left when open */
         }
 
+
         #dash-icons{
             color: #fff;
             
@@ -4142,6 +4143,56 @@ align-items: center;
         .section3a7 h3{
             font-size: 45px;
         }
+
+
+        .modal7 {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 10000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100vh; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.5); /* Black w/ 50% opacity */
+            /* Location of the box */
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal-content7 {
+            background-color: #fefefe;
+            margin: 8% auto; /* 5% from the top and centered */
+            padding: 20px 50px;
+            border-radius: 14px;
+            color: black;
+            width: 50%;
+            height: 70%; /* Could be more or less, depending on screen size */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            font-family: Bricolage Grotesque;
+        }
+
+
+        .modal-content7 .flow{
+            margin: 0px 150px;
+            width: 300px;
+        }
+
+
+        .modal-content7 img{
+            width: 400px;
+            height: 250px;
+        }
+        
+        .modal-content7 p{
+            text-align: center;
+            font-size: 14px;
+            color: #8c8c8c;
+            margin-top: 14px;
+        }
+        
 
          /************** FAQS ************/
 
@@ -4599,6 +4650,54 @@ align-items: center;
 
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
+
+            .modal7 {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 10000; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100vh; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgba(0,0,0,0.5); /* Black w/ 50% opacity */
+                /* Location of the box */
+                backdrop-filter: blur(5px);
+            }
+
+            .modal-content7 {
+                background-color: #fefefe;
+                margin: 40% auto; /* 5% from the top and centered */
+                padding: 20px 50px;
+                border-radius: 14px;
+                color: black;
+                width: 80%;
+                height: 60%; /* Could be more or less, depending on screen size */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                font-family: Bricolage Grotesque;
+            }
+    
+    
+            .modal-content7 .flow{
+                margin: 0px 150px;
+                width: 280px;
+            }
+    
+    
+            .modal-content7 img{
+                width: 300px;
+                height: 200px;
+            }
+            
+            .modal-content7 p{
+                text-align: center;
+                font-size: 14px;
+                color: #8c8c8c;
+                margin-top: 14px;
+            }
 
             .activer{
                 display: none;

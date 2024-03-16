@@ -202,6 +202,28 @@ input:checked + .slider:before {
 </div>
 
 
+<div id="myModal7" class="modal7">
+  <div class="modal-content7">
+
+    <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal3()">&times;</a>
+
+      <h2>Refer & Earn</h2>
+      <p>Earn up to $50 when you successfully refer someonne </p>
+
+      <div class="cirx">
+
+      </div>
+
+      <img src="images/reffer.png" alt="">
+
+      <a class="flow" onclick="closeModal3()"href="#">coming soon</a>
+  </div>
+</div>
+
+
+
+
+
 
 
     <div class="sidebar" id="sidebar" data-aos="fade-up">
@@ -244,7 +266,7 @@ input:checked + .slider:before {
 
       </div>
 
-      <div class="iconz-div" onclick="openPage('refer'), toggleNav()">
+      <div class="iconz-div" onclick="openPage('refer'), toggleNav(), openModal3()">
         <img id="togglePassword" src="images/icons8-team-90.png" alt="">
         <a href="#" class="menu-link" >Refer user</a>
       </div>
@@ -1499,6 +1521,33 @@ document.getElementById('tabs1').style.display = 'block';
                 modal6.style.display = "none";
             }, 50); // Delay added to match the transition duration
             document.body.classList.remove('modal-open6'); 
+        }
+
+    // Close the modal when the user clicks anywhere outside of it
+   
+</script>
+
+<script>
+    // Get the modal
+    var modal7 = document.getElementById("myModal7");
+
+    modal7.style.display = "none";
+
+    function openModal3() {
+            modal7.style.display = "block";
+            setTimeout(function() {
+                modal7.classList.add("open7");
+            }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+            document.body.classList.add('modal-open7');
+        }
+
+        function closeModal3() {
+            modal6.classList.remove("open7");
+            setTimeout(function() {
+                modal7.style.display = "none";
+            }, 50); // Delay added to match the transition duration
+            document.body.classList.remove('modal-open7'); 
         }
 
     // Close the modal when the user clicks anywhere outside of it
