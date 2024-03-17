@@ -100,9 +100,19 @@
       }
               }
       
-            </style>
+    </style>
 </head>
 <body>
+
+  <div id="myModal8" class="modal8">
+    <div class="modal-content8">
+
+      
+      <div class="loader"></div>
+    </div>
+</div>
+
+
     <div class="section">
         
       <nav id="nav2">
@@ -321,6 +331,7 @@
            // alert('Form submitted successfully.');
             // You can submit the form or perform other actions here
 
+            openModal1();
             var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
         var name = document.getElementById('firstName').value;
@@ -329,6 +340,7 @@
     .then((userCredential) => {
       // Signed up 
       const user = userCredential.user;
+      closeModal1();
       alert('Account created successfully');
     localStorage.setItem('user_name', name);
   
@@ -383,7 +395,57 @@
 </script>
 
 <script>
-   
+  // Get the modal
+  var modal6 = document.getElementById("myModal6");
+
+  modal6.style.display = "none";
+
+  function openModal2() {
+          modal6.style.display = "block";
+          setTimeout(function() {
+              modal6.classList.add("open6");
+          }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+          document.body.classList.add('modal-open6');
+      }
+
+      function closeModal2() {
+          modal6.classList.remove("open6");
+          setTimeout(function() {
+              modal6.style.display = "none";
+          }, 50); // Delay added to match the transition duration
+          document.body.classList.remove('modal-open6'); 
+      }
+
+  // Close the modal when the user clicks anywhere outside of it
+ 
+</script>
+
+<script>
+  // Get the modal
+  var modal8 = document.getElementById("myModal8");
+
+  modal8.style.display = "none";
+
+  function openModal1() {
+          modal8.style.display = "block";
+          setTimeout(function() {
+              modal8.classList.add("open8");
+          }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+          document.body.classList.add('modal-open8');
+      }
+
+      function closeModal1() {
+          modal8.classList.remove("open8");
+          setTimeout(function() {
+              modal8.style.display = "none";
+          }, 50); // Delay added to match the transition duration
+          document.body.classList.remove('modal-open8'); 
+      }
+
+  // Close the modal when the user clicks anywhere outside of it
+ 
 </script>
 
 

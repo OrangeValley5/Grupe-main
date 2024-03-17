@@ -208,7 +208,7 @@ input:checked + .slider:before {
     <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal3()">&times;</a>
 
       <h2>Refer & Earn</h2>
-      <p>Earn up to $50 when you successfully refer someonne </p>
+      <p>Earn up to $50 when you successfully refer someone </p>
 
       <div class="cirx">
 
@@ -672,12 +672,12 @@ input:checked + .slider:before {
     <div class="profile-switch" id="profile-switch">
 
       <div id="tabs1" style="display:block;">
-        <h4 id="non">Fund Wallet</h4>
+        <h4 id="non">Deposit</h4>
             <div class="new-cont">
             
             <h6>Enter amount</h6>
 
-            <input id="amount" class="amountbx"  type="number" placeholder="$0">
+            <input id="amount" class="amountbx"  type="text" placeholder="$0">
 
 
             <h6>Choose your preferred funding method</h6>
@@ -793,7 +793,7 @@ input:checked + .slider:before {
   <div class="bt-container">
 
       <p id="bold">Network type</p>
-
+ 
       <p>BTC</p>
   </div>
 
@@ -835,15 +835,15 @@ input:checked + .slider:before {
     
 
     <div class="grid" data-aos="fade-up">
-        <div class="grid-container" data-aos="fade-up">
+        <div id="boxed1" class="grid-container" data-aos="fade-up">
             <h4>Lite plan</h4>
             <div class="amount">
-                <h2>$25</h2>
+                <h2 id="price1">$25</h2>
                 <p>minimum deposit</p>
             </div>
             <p>6% daily ROI for 10days</p>
             <div class="btn-container">
-                <a href="#"><button>Choose Package</button></a>
+                <a onclick="openPage('deposit')" href="#"><button>Choose Package</button></a>
             </div>
             <h4>Features</h4>
             <div class="features">
@@ -865,21 +865,21 @@ input:checked + .slider:before {
                 </div>
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
-                    <p>$10 sign up bonus</p>
+                    <p>$10 gift bonus</p>
                 </div>
             </div>
         </div>
 
 
-        <div class="grid-container" data-aos="fade-up">
+        <div id="boxed2" class="grid-container" data-aos="fade-up">
             <h4>Basic plan</h4>
             <div class="amount">
-                <h2>$50</h2>
+                <h2 id="price2">$50</h2>
                 <p>minimum deposit</p>
             </div>
             <p>10% daily ROI</p>
             <div class="btn-container">
-                <a href="#"><button>Choose package</button></a>
+                <a onclick="openPage('deposit')" href="#"><button>Choose package</button></a>
             </div>
             <h4>Features</h4>
             <div class="features">
@@ -901,12 +901,12 @@ input:checked + .slider:before {
                 </div>
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
-                    <p>$15 sign up bonus</p>
+                    <p>$15 gift bonus</p>
                 </div>
             </div>
         </div>
 
-        <div class="grid-container" data-aos="fade-up">
+        <div id="boxed3" class="grid-container" data-aos="fade-up">
             <div class="first-row">
                 <h4>Premium plan</h4>
                 <div class="tag">
@@ -914,18 +914,18 @@ input:checked + .slider:before {
                 </div>
             </div>
             <div class="amount">
-                <h2>$100</h2>
+                <h2 id="price3">$100</h2>
                 <p>minimum deposit</p>
             </div>
             <p>14% daily ROI</p>
             <div class="btn-container">
-                <a href="#"><button>Choose package</button></a>
+                <a onclick="openPage('deposit')" href="#"><button>Choose package</button></a>
             </div>
             <h4>Features</h4>
             <div class="features">
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
-                    <p>$100 Minimum deposit</p>
+                    <p>Minimum deposit $100</p>
                 </div>
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
@@ -941,26 +941,26 @@ input:checked + .slider:before {
                 </div>
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
-                    <p>$20 sign up bonus</p>
+                    <p>$20 gift bonus</p>
                 </div>
             </div>
         </div>
 
-        <div class="grid-container" data-aos="fade-up">
+        <div id="boxed4" class="grid-container" data-aos="fade-up">
             <h4>Ultimate plan</h4>
             <div class="amount">
-                <h2>$500</h2>
+                <h2 id="price4">$500</h2>
                 <p>minimum deposit</p>
             </div>
             <p>18% daily ROI</p>
             <div class="btn-container">
-                <a href="#"><button>Get started</button></a>
+                <a onclick="openPage('deposit')" href="#"><button>Get started</button></a>
             </div>
             <h4>Features</h4>
             <div class="features">
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
-                    <p>$500 minimum deposit</p>
+                    <p>Minimum deposit $500</p>
                 </div>
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
@@ -976,7 +976,7 @@ input:checked + .slider:before {
                 </div>
                 <div class="ft-items">
                     <img src="images/icons8-check-96.png" alt="">
-                    <p>$30 sign up bonus</p>
+                    <p>$30 gift bonus</p>
                 </div>
             </div>
         </div>
@@ -1615,7 +1615,6 @@ links.forEach(function(link) {
         });
 </script>
 
-
 <script>
         function saveBank() {
             localStorage.setItem('bank', document.getElementById('bank').value);
@@ -1639,19 +1638,18 @@ links.forEach(function(link) {
             document.getElementById('lite').value = localStorage.getItem('lite') || '';
         });
  
-    </script>
+</script>
 
-    <script>
+<script>
         function saveAmount() {
             localStorage.setItem('amount', document.getElementById('amount').value);
             document.getElementById('displayAmount').textContent = '$' + document.getElementById('amount').value;
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('amount').value = localStorage.getItem('amount') || '';
             document.getElementById('displayAmount').textContent = '$' + (localStorage.getItem('amount') || '');
         });
-    </script>
+</script>
 
     
       <script>
@@ -1747,6 +1745,40 @@ links.forEach(function(link) {
         document.getElementById('current-date').textContent = savedDate;
     }
 </script>
+
+
+<script>
+
+ 
+
+  function addAnchorClickListeners() {
+    document.getElementById('boxed1').querySelector('a').addEventListener('click', function() {
+        const price = document.getElementById('price1').textContent;
+        document.getElementById('amount').value = price;
+    });
+
+    document.getElementById('boxed2').querySelector('a').addEventListener('click', function() {
+        const price = document.getElementById('price2').textContent;
+        document.getElementById('amount').value = price;
+    });
+
+    document.getElementById('boxed3').querySelector('a').addEventListener('click', function() {
+        const price = document.getElementById('price3').textContent;
+        document.getElementById('amount').value = price;
+    });
+
+    document.getElementById('boxed4').querySelector('a').addEventListener('click', function() {
+        const price = document.getElementById('price4').textContent;
+        document.getElementById('amount').value = price;
+    });
+
+
+}
+
+addAnchorClickListeners();
+
+
+  </script>
     
 
    
