@@ -116,7 +116,7 @@
     <div class="section">
         
       <nav id="nav2">
-        <a href="index.html"><h4 id="logo">Grupe </h4></a>
+        <a href="index.html"><h4 id="logo">Monotide </h4></a>
   
         <ul>
             <li><a href="login.html" class="activer">Sign In</a></li>
@@ -124,7 +124,7 @@
     </nav>
         
         <div class="login-card"  data-aos="fade-up">
-            <h5>Create your grupe account</h5>
+            <h5>Create your monotide account</h5>
             
             <form action="">
 
@@ -170,8 +170,8 @@
 
                 <div class="terms-box">
                   <p>
-                    I agree to the Grupe Payments <a href="terms.html">T&Cs, Grupe Metals 
-                    T&Cs Grupe Group T&Cs </a> and confirm 
+                    I agree to the Monotide Payments <a href="terms.html">T&Cs, Monotide Metals 
+                    T&Cs Monotide Group T&Cs </a> and confirm 
                     I’m acting under my own name and on my own behalf.
                   </p>
 
@@ -183,7 +183,7 @@
 
                 <div class="terms-box">
                   <p>
-                    I agree to the Grupe <a href="privacy.html">Privacy Policy</a>
+                    I agree to the Monotide <a href="privacy.html">Privacy Policy</a>
                   </p>
 
                   <label class="switch">
@@ -333,8 +333,8 @@
 
             openModal1();
             var email = document.getElementById('email').value;
-        var password = document.getElementById('password').value;
-        var name = document.getElementById('firstName').value;
+            var password = document.getElementById('password').value;
+            var name = document.getElementById('firstName').value;
   
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -355,6 +355,8 @@
       // ...
     })
     .catch((error) => {
+
+      closeModal1();
       const errorCode = error.code;
       const errorMessage = error.message;
   
