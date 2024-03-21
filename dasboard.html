@@ -629,7 +629,7 @@ input:checked + .slider:before {
 
       </div>
 
-      <div class="others-container">
+      <div id="mb" class="others-container">
 
         <p>Notify me via email when my investment plan expires</p>
       
@@ -751,6 +751,15 @@ input:checked + .slider:before {
   
  
   <div id="tabs2"  style="display:none;" id="tabs2-link">
+
+    <a  id="tabs2-link">
+      <div  class="back-btn">
+        <img src="images/icons8-back-arrow-100.png" alt="">
+      </div>
+    </a>
+   
+
+
     <p id="dee" class="cont-subtitle">You are to make a payment of <span id="displayAmount"></span> using
       your selected payment method. Screenshot
       and upload the proof of payment
@@ -810,7 +819,7 @@ input:checked + .slider:before {
   
 
 
-  <a class="pay-btn" href="#"> Submit Payment</a></button>
+  <a class="pay-btn" > Submit Payment</a></button>
 
   </div>
   
@@ -1468,8 +1477,8 @@ document.getElementById('tabs1').style.display = 'block';
 
     document.getElementById('tabs2-link').addEventListener('click', function(e) {
         e.preventDefault();
-        document.getElementById('tabs1').style.display = 'none';
-        document.getElementById('tabs2').style.display = 'block';
+        document.getElementById('tabs1').style.display = 'block';
+        document.getElementById('tabs2').style.display = 'none';
     });
 
 </script>
@@ -1596,6 +1605,8 @@ links.forEach(function(link) {
 });
 
 </script>
+
+
  
 <script>
         function saveProfile() {
@@ -1778,7 +1789,7 @@ links.forEach(function(link) {
 addAnchorClickListeners();
 
 
-  </script>
+</script>
     
 
    
