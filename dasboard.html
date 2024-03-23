@@ -1663,11 +1663,11 @@ document.getElementById('tabs1').style.display = 'block';
 <script>
         function saveAmount() {
             localStorage.setItem('amount', document.getElementById('amount').value);
-            document.getElementById('displayAmount').textContent = '$' + document.getElementById('amount').value;
+            document.getElementById('displayAmount').textContent = '' + document.getElementById('amount').value;
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('displayAmount').textContent = '$' + (localStorage.getItem('amount') || '');
+            document.getElementById('displayAmount').textContent = '' + (localStorage.getItem('amount') || '');
         });
 </script>
 
