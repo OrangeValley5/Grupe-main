@@ -4823,6 +4823,16 @@ align-items: center;
                 margin-top: 14px;
             }
 
+            .reded{
+                color: red;
+            }
+
+            .proved{
+                color: rgb(0, 203, 0);
+                margin-left: 20px;
+
+            }
+
 
             .modal0 {
                 display: none; /* Hidden by default */
