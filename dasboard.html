@@ -182,12 +182,12 @@ input:checked + .slider:before {
       </div>
   </div>
 
-  <div id="myModal5" class="modal5">
-    <div class="modal-content5">
+  <div id="myModal0" class="modal0">
+    <div class="modal-content0">
 
-      <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal()">&times;</a>
+      <a href="javascript:void(0)" id="closer" class="closebtn" onclick="closeModal0()">&times;</a>
 
-        <h2>Heyy</h2>
+        <h2>Oops</h2>
         <p>complete your profile setup to verify your account for withdrawal</p>
 
         <div class="cirx">
@@ -196,7 +196,7 @@ input:checked + .slider:before {
 
         <img src="images/oops.png" alt="">
 
-        <a class="flow" onclick="closeModal()"   href="#">Continue</a>
+        <a class="flow" onclick="closeModal0()"   href="#">Continue</a>
     </div>
 </div>
 
@@ -254,7 +254,7 @@ input:checked + .slider:before {
         <a href="#" id="invinsible" class="activ" >Dashboard</a>
       </div>
 
-      <div  class="iconz-div" onclick="openPage('about'), toggleNav()">
+      <div  class="iconz-div" onclick="openPage('about'), toggleNav(), openModal0()">
 
         <img id="togglePassword" src="images/icons8-user-90.png" alt="">
         <a href="#" class="menu-link"> User Profile </a>
@@ -1590,6 +1590,33 @@ document.getElementById('tabs1').style.display = 'block';
                 modal7.style.display = "none";
             }, 50); // Delay added to match the transition duration
             document.body.classList.remove('modal-open7'); 
+        }
+
+    // Close the modal when the user clicks anywhere outside of it
+   
+</script>
+
+<script>
+    // Get the modal
+    var modal0 = document.getElementById("myModal0");
+
+    modal0.style.display = "none";
+
+    function openModal0() {
+            modal0.style.display = "block";
+            setTimeout(function() {
+                modal0.classList.add("open0");
+            }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+            document.body.classList.add('modal-open0');
+        }
+
+        function closeModal0() {
+            modal0.classList.remove("open0");
+            setTimeout(function() {
+                modal0.style.display = "none";
+            }, 50); // Delay added to match the transition duration
+            document.body.classList.remove('modal-open0'); 
         }
 
     // Close the modal when the user clicks anywhere outside of it
