@@ -4751,15 +4751,44 @@ align-items: center;
 
               .back-btn img{
                 width: 30px;
-                height: 30px;
+                height: 30px; 
                 margin: 0px;
                 padding: 0px;
+                transform: translateX(-18px);
               }
+
+
+           
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 200px;
+                height: 200px;
+                border: 1px solid #ddd;
+                z-index: 1;
+                overflow: auto;
+            }
+
+
+            
+            .dropdown-content a {
+                padding: 10px;
+                display: block;
+                text-decoration: none;
+                color: #333;
+                font-size: 12px;
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
          
 
           /* Media query for mobile */
           @media screen and (max-width: 768px) {
-
+            
             .modal-content8 {
                 background-color: #fefefe;
                 margin: 50% auto; /* 5% from the top and centered */

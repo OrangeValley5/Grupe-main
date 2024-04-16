@@ -104,7 +104,7 @@
 </head>
 <body>
 
-  <div id="myModal8" class="modal8">
+  <div id="myModal8" class="modal8"> 
     <div class="modal-content8">
 
       
@@ -160,9 +160,14 @@
                   <input id="refer" type="text" class="input-field" placeholder="Referral code">
                 </div>
 
+
+                
+
+
                 <div id="passwordRequirements" class="notification">
                   Password must contain at least one uppercase letter, one number, one special character, and be at least 8 characters long.
               </div>
+
                
                 <div id="passwordStrength" class="password-strength">
                     <div class="strength-bar" id="uppercase-bar"></div>
@@ -304,6 +309,7 @@
     apiKey: "AIzaSyDnUd9s5l404NFXsw-RjyhD8fRrzOo76gc",
     authDomain: "grupe-ab915.firebaseapp.com",
     projectId: "grupe-ab915",
+    databaseURL: "https://grupe-ab915-default-rtdb.firebaseio.com/",
     storageBucket: "grupe-ab915.appspot.com",
     messagingSenderId: "478945314323",
     appId: "1:478945314323:web:7ee28660ee5c1233cae1e6",
@@ -370,6 +376,10 @@
     });
         }
     }
+
+
+   
+
     
       </script>
 
@@ -377,8 +387,10 @@
   function saveNames() {
       const firstName = document.getElementById('firstName').value.trim();
       const lastName = document.getElementById('lastName').value.trim();
+      const email = document.getElementById('email').value.trim();
       localStorage.setItem('firstName', firstName);
       localStorage.setItem('lastName', lastName);
+      localStorage.setItem('email', email);
   }
 </script>
 

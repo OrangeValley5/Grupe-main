@@ -41,6 +41,8 @@
     
       </script>
 
+<script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
     
 </head>
 <body >
@@ -81,10 +83,19 @@
             </div>
 
             
+
+            <input id="username" type="text" class="input-field" placeholder="Username">
+  <input id="age" type="number" class="input-field" placeholder="Age">
+  <input id="firstname" type="text" class="input-field" placeholder="First Name">
+  <input id="lastname" type="text" class="input-field" placeholder="Last Name">
+  <input id="hobbies" type="text" class="input-field" placeholder="Hobbies">
             
 
            
 
+            <input id="push" type="text" class="input-field" placeholder="Referral code">
+
+                <a id="submitButton" href="#">PUSHe</a>
            
 
            
@@ -101,8 +112,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js"></script>
-    <script src="./Mail.js"></script>
-    <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -110,106 +119,69 @@
 
 
 
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
 
-
-<script>
-    // Function to retrieve and display data from local storage
-    function retrieveDataFromLocalStorage() {
-        const savedBankName = localStorage.getItem('selectedBank');
-        const savedAccountNumber = localStorage.getItem('accountNumber');
-        const savedAmount = localStorage.getItem('savedAmount1');
-        const savedDate = localStorage.getItem('savedDate');
-        const savedDuration = localStorage.getItem('dury');
-        const savedLastName = localStorage.getItem('lastName');
-        const savedfirstName = localStorage.getItem('user_name');
-
-
-
-        const bankNameElement = document.getElementById('bankName');
-        const accountNumberElement = document.getElementById('accountNumber');
-        const loanAmountElement = document.getElementById('loanAmount');
-
-        const applyDateElement = document.getElementById('applyDate');
-        const applyDurationElement = document.getElementById('durationValue');
-        const lastNameElement = document.getElementById('lName');
-        const firstNameElement = document.getElementById('fName');
-
-
-
-
-        if (savedBankName) {
-            bankNameElement.textContent = savedBankName;
-        }
-
-        if (savedAccountNumber) {
-            accountNumberElement.textContent = savedAccountNumber;
-        }
-
-        if (savedAmount) {
-            loanAmountElement.textContent = savedAmount;
-        }
-
-        if (savedDate) {
-            applyDateElement.textContent = savedDate;
-        }
-
-
-        if (savedLastName) {
-            lastNameElement.textContent = savedLastName;
-        }
-
-        if (savedfirstName) {
-            firstNameElement.textContent = savedfirstName;
-        }
-
-       
-    }
-
-    // Call the retrieve function when the page loads
-    retrieveDataFromLocalStorage();
-
-</script>
-
-
-
-
-
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal2");
-
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+    apiKey: "AIzaSyDnUd9s5l404NFXsw-RjyhD8fRrzOo76gc",
+    authDomain: "grupe-ab915.firebaseapp.com",
+    projectId: "grupe-ab915",
+    databaseURL: "https://grupe-ab915-default-rtdb.firebaseio.com/",
+    storageBucket: "grupe-ab915.appspot.com",
+    messagingSenderId: "478945314323",
+    appId: "1:478945314323:web:7ee28660ee5c1233cae1e6",
+    measurementId: "G-MKWT76FL25"
+  };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
     
+      
+    // Add event listener to the button
+    document.getElementById("submitButton").addEventListener("click", function() {
 
-    // Close the modal when the user clicks anywhere outside of it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-
-    function closeModal() {
-            modal.style.display = "none";
-            document.body.classList.add("modal-closed"); // Add class to show page content
-        }
-
-
-        function openModal() {
-            modal.style.display = "block";
-            setTimeout(function() {
-                modal.classList.add("open");
-            }, 50); // Delay added to ensure the display property is applied before adding the 'open' class
-        }
-
-        function closeModal() {
-            modal.classList.remove("open");
-            setTimeout(function() {
-                modal.style.display = "none";
-            }, 500); // Delay added to match the transition duration
-        }
         
-</script>
+      // Get values of all input fields
+      var username = document.getElementById("username").value;
+      var age = document.getElementById("age").value;
+      var firstname = document.getElementById("firstname").value;
+      var lastname = document.getElementById("lastname").value;
+      var hobbies = document.getElementById("hobbies").value;
+      var referralCode = document.getElementById("push").value;
+      
+      //alert('doing');
+      
+      // Get a reference to the database service
+      var database = firebase.database();
+
+      // Push the user object to your Firebase Database
+      database.ref('users').push({
+        username: username,
+        age: age,
+        firstname: firstname,
+        lastname: lastname,
+        hobbies: hobbies,
+        referralCode: referralCode
+      }).then(function() {
+        alert('done');
+        console.log("User data sent to Firebase Database successfully!");
+        // Clear the input fields after sending the user data
+        document.getElementById("username").value = "";
+        document.getElementById("age").value = "";
+        document.getElementById("firstname").value = "";
+        document.getElementById("lastname").value = "";
+        document.getElementById("hobbies").value = "";
+        document.getElementById("push").value = "";
+      }).catch(function(error) {
+        alert(error);
+        console.error("Error sending user data to Firebase Database:", error);
+      });
+    });
+  </script>
+
+
 
  
 

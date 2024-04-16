@@ -143,6 +143,10 @@ input:checked + .slider:before {
   drift.load('8x677egzb4gt');
   </script>
   <!-- End of Async Drift Code -->
+
+
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
 </head>
 <body >
 
@@ -157,7 +161,7 @@ input:checked + .slider:before {
 
             </div>
 
-            <img onclick="closer()" src="https://lh6.googleusercontent.com/gly40r_XLBlfeGBj4k0B7Kp_tPy_MSI2dJWif3Cf5dZgjoUteQQtn77jtO3Dv1ABV2-uNj7nC4fDi4AixjAdKIwtnouyZgMV-XU5u5nE5gTFc8H0dhkNvyQfLYBHA6Kz6w=w1280" alt="">
+            <img onclick="closer()" src="images/mail.png" alt="">
 
             <a class="flow" id="closing" onclick="openPage('deposit')"   href="#">Make deposit</a>
         </div>
@@ -176,11 +180,14 @@ input:checked + .slider:before {
 
           </div>
 
-          <img src="https://lh4.googleusercontent.com/7Yxb0Cd37-dE2wicOqRvGCvJxp8MVVaOD2DMzMwMz-4_joj2roW5w3d3Z6C-7ZXbL_JAbygKcXitdBFTK2HHZstAoumUsJPFbOEdVonzS6ShvCjootmViXTqRfzRxJsOHg=w1280" alt="">
+          <img src="images/oops.png" alt="">
 
           <a class="flow" onclick="openPage('deposit'), closeModal()"   href="#">Make deposit</a>
       </div>
   </div>
+
+
+
 
   <div id="myModal0" class="modal0">
     <div class="modal-content0">
@@ -194,7 +201,7 @@ input:checked + .slider:before {
 
         </div>
 
-        <img src="https://lh4.googleusercontent.com/7Yxb0Cd37-dE2wicOqRvGCvJxp8MVVaOD2DMzMwMz-4_joj2roW5w3d3Z6C-7ZXbL_JAbygKcXitdBFTK2HHZstAoumUsJPFbOEdVonzS6ShvCjootmViXTqRfzRxJsOHg=w1280" alt="">
+        <img src="images/oops.png" alt="">
 
         <a class="flow" onclick="closeModal0()"   href="#">Continue</a>
     </div>
@@ -235,6 +242,18 @@ input:checked + .slider:before {
       <img src="images/reffer.png" alt="">
 
       <a class="flow" onclick="closeModal3()"href="#">coming soon</a>
+  </div>
+</div>
+
+
+
+
+<div id="myModal8" class="modal8"> 
+  <div class="modal-content8">
+
+    <p id="mtext">Saving</p>
+    
+    <div class="loader"></div>
   </div>
 </div>
 
@@ -474,9 +493,9 @@ input:checked + .slider:before {
 
           <div class="input-sub">
             <p>Date of Birth</p>
-            <input id="dob" type="text" placeholder="Enter you phone number">
+            <input id="dob" type="date" placeholder="Enter you phone number">
           </div>
-        </div>
+          </div>
 
 
         <div class="input-container">
@@ -487,19 +506,46 @@ input:checked + .slider:before {
           </div>
 
           <div class="input-sub">
-            <p>Social media handle</p>
-            <input id="social" type="text" placeholder="Optional">
+            <p>Country</p>
+            <input class="dropdown" id="social" type="text" placeholder="What country are you in ?">
+            <div class="dropdown-content" id="countryDropdown">
+
           </div>
         </div>
+        
+      </div>
 
+
+      <div class="input-container">
+
+        <div class="input-sub">
+          <p>City</p>
+          <input class="dropdown"  id="city" type="text" placeholder="Enter your city">
+          <div class="dropdown-content" id="cityDropdown"></div>
+        </div>
+
+        <div class="input-sub">
+          <p>Zip code</p>
+          <input id="zip" type="number" placeholder="Zip code">
+          
+
+        </div>
+      </div>
+      
+    </div>
+
+
+     
+
+      <div class="input-container">
 
         <div class="button-div">
 
-          <a onclick="saveProfile()" class="profile-button" href="#">Submit</a>
+          <a id="submitButton" class="profile-button" href="#">Submit</a>
   
         </div>
-  
-      </div>
+        
+        </div>
 
 
      
@@ -784,7 +830,7 @@ input:checked + .slider:before {
     <p id="dee" class="cont-subtitle">You are to make a payment of <span id="displayAmount"></span> using
       your selected payment method to the address below. Screenshot
       and upload the proof of payment
-   </p>
+    </p>
 
 
   <div class="pay-options">
@@ -814,7 +860,7 @@ input:checked + .slider:before {
 </div>
 
   <div class="pay-box">
-      <p id="payment-text">1N95cw5f3YL75H26TcECQXHmQZZyPmJCh</p>
+      <p id="payment-text">bc1q3c6ysj2tpvkrqv47n300z27kvz7h0nr8yjkv92</p>
       <div class="copy-btn">
           <img id="copy-img" src="images/icons8-copy-96.png" alt="">
       </div>
@@ -1378,6 +1424,10 @@ input:checked + .slider:before {
 
   </div>
 
+  
+  
+
+
 
  
   <script>
@@ -1390,12 +1440,89 @@ input:checked + .slider:before {
 
     <script src="./Mail.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
+  <script type="module">
 
+
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+    import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+  
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+      apiKey: "AIzaSyDnUd9s5l404NFXsw-RjyhD8fRrzOo76gc",
+      authDomain: "grupe-ab915.firebaseapp.com",
+      projectId: "grupe-ab915",
+      databaseURL: "https://grupe-ab915-default-rtdb.firebaseio.com/",
+      storageBucket: "grupe-ab915.appspot.com",
+      messagingSenderId: "478945314323",
+      appId: "1:478945314323:web:7ee28660ee5c1233cae1e6",
+      measurementId: "G-MKWT76FL25"
+    };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+
+     
+    
+        
+      // Add event listener to the button
+      document.getElementById("submitButton").addEventListener("click", function() {
+  
+        
+          
+        // Get values of all input fields
+        var fullname = document.getElementById("fullName").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("phone").value;
+        var country = document.getElementById("social").value;
+        var address = document.getElementById("address").value;
+        var dob = document.getElementById("dob").value;
+        var city = document.getElementById("city").value;
+        var zip = document.getElementById("zip").value;
+
+
+        
+      
+        
+        // Get a reference to the database service
+        var database = firebase.database();
+  
+        // Push the user object to your Firebase Database
+        database.ref('users').push({
+          fullname: fullname,
+          email: email,
+          number: number,
+          address: address,
+          dob: dob,
+          country: country,
+          city: city,
+          zip: zip
+        }).then(function() {
+          openModal8();
+          //alert('done');
+          saveProfile();
+          
+          console.log("User data sent to Firebase Database successfully!");
+          // Clear the input fields after sending the user data
+        }).catch(function(error) {
+          alert(error);
+          alert('we encountred an error while trying to save your information. Please try again afetr some time');
+          console.error("Error sending user data to Firebase Database:", error);
+        });
+      });
+
+
+ 
+
+    </script>
 
 
 <script>
@@ -1646,7 +1773,7 @@ document.getElementById('tabs1').style.display = 'block';
 
 
 
-
+<!------      SAVE PROFILE --------->
  
 <script>
         function saveProfile() {
@@ -1655,6 +1782,11 @@ document.getElementById('tabs1').style.display = 'block';
             localStorage.setItem('dob', document.getElementById('dob').value);
             localStorage.setItem('address', document.getElementById('address').value);
             localStorage.setItem('social', document.getElementById('social').value);
+            localStorage.setItem('city', document.getElementById('city').value);
+            localStorage.setItem('zip', document.getElementById('zip').value);
+
+
+            //alert('saved');
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -1663,6 +1795,11 @@ document.getElementById('tabs1').style.display = 'block';
             document.getElementById('dob').value = localStorage.getItem('dob') || '';
             document.getElementById('address').value = localStorage.getItem('address') || '';
             document.getElementById('social').value = localStorage.getItem('social') || '';
+            document.getElementById('city').value = localStorage.getItem('city') || '';
+            document.getElementById('zip').value = localStorage.getItem('zip') || '';
+
+
+z
         });
 </script>
 
@@ -1830,7 +1967,287 @@ addAnchorClickListeners();
 
 
 </script>
-    
+
+
+<script>
+  // Get the modal
+  var modal8 = document.getElementById("myModal8");
+  var text = document.getElementById("mtext");
+
+  modal8.style.display = "none";
+
+  function openModal8() {
+          modal8.style.display = "block";
+          setTimeout(function() {
+              modal8.classList.add("open8");
+          }, ); // Delay added to ensure the display property is applied before adding the 'open' class
+
+          document.body.classList.add('modal-open8');
+
+          text.textContent = "Saving...";
+
+         // Wait for 3 seconds before changing the content to "Saved"
+           setTimeout(function() {
+               text.textContent = "Saved";
+              }, 3000);
+          // Close the modal after 8 seconds
+          setTimeout(closeModal8, 4000);
+      }
+
+      function closeModal8() {
+          modal8.classList.remove("open8");
+          setTimeout(function() {
+              modal8.style.display = "none";
+          }, 50); // Delay added to match the transition duration
+          document.body.classList.remove('modal-open8'); 
+      }
+
+
+   
+
+   
+  // Close the modal when the user clicks anywhere outside of it
+ 
+</script>
+
+<script>
+  
+  var inputField = document.getElementById("social");
+var dropdownContent = document.getElementById("countryDropdown");
+
+// List of countries (You can replace this with your own list)
+var countries = [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Austria",
+    "Canada",
+    "Central African Republic",
+    "Chad",
+    "Chile",
+    "China",
+    "Colombia",
+    "Comoros",
+    "Congo, Democratic Republic of the",
+    "Congo, Republic of the",
+    "Costa Rica",
+    "Cote d'Ivoire",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Ethiopia",
+    "Fiji",
+    "Finland",
+    "France",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
+    "Korea, North",
+    "Korea, South",
+    "Kosovo",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Marshall Islands",
+    "Mauritania",
+    "Mauritius",
+    "Mexico",
+    "Micronesia",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Rwanda",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "Samoa",
+    "San Marino",
+    "Switzerland",
+    "Thailand",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States",
+    "Uruguay",
+    "Vietnam",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
+];
+
+// Function to populate the dropdown with country options
+function populateDropdown() {
+    // Clear existing options
+    dropdownContent.innerHTML = "";
+
+    // Add options for each country
+    countries.forEach(function(country) {
+        var option = document.createElement("a");
+        option.textContent = country;
+        option.addEventListener("click", function() {
+            inputField.value = country;
+            dropdownContent.style.display = "none";
+        });
+        dropdownContent.appendChild(option);
+    });
+
+    dropdownContent.style.width = inputField.offsetWidth + "px";
+
+    // Display the dropdown
+    dropdownContent.style.display = "block";
+}
+
+// Event listener to trigger the dropdown when the input field is clicked
+inputField.addEventListener("click", populateDropdown);
+
+// Event listener to hide the dropdown when clicking outside of it
+window.addEventListener("click", function(event) {
+    if (!event.target.matches("#social") && !event.target.matches(".dropdown-content a")) {
+        dropdownContent.style.display = "none";
+    }
+});
+
+  
+</script>
+
+
+<script>
+  var inputField2 = document.getElementById("city");
+var dropdownContent2 = document.getElementById("cityDropdown");
+
+// List of cities (You can replace this with your own list)
+var cities = [
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "New York",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "Washington",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming"
+];
+
+// Function to populate the dropdown with city options
+function populateDropdown2() {
+    // Clear existing options
+    dropdownContent2.innerHTML = "";
+
+    // Add options for each city
+    cities.forEach(function(city) {
+        var option2 = document.createElement("a");
+        option2.textContent = city;
+        option2.addEventListener("click", function() {
+            inputField2.value = city;
+            dropdownContent2.style.display = "none";
+        });
+        dropdownContent2.appendChild(option2);
+    });
+
+    // Set the width of the dropdown content to match the width of the input field
+    dropdownContent2.style.width = inputField2.offsetWidth + "px";
+
+    // Display the dropdown
+    dropdownContent2.style.display = "block";
+}
+
+// Event listener to trigger the dropdown when the input field is focused
+inputField2.addEventListener("focus", populateDropdown2);
+
+// Event listener to hide the dropdown when clicking outside of it
+window.addEventListener("click", function(event) {
+    if (!event.target.matches("#city") && !event.target.matches(".dropdown-content2 a")) {
+        dropdownContent2.style.display = "none";
+    }
+});
+
+  </script>
+
+
+  
 
    
     
